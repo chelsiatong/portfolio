@@ -1,1 +1,37 @@
 @use '../../styles/partials/global';
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/variables';
+
+
+.sidebar {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    &__initial {
+        margin: 0;
+        padding-left: 1rem;
+        padding-top: 0.6rem;
+        font-size: 2rem;
+        letter-spacing: 6px;
+    }
+
+    &__header {
+        display: flex;
+        margin-top: 0.4rem;
+        margin-right: 1rem;
+    }
+
+    &__nav {
+        margin-right: 1rem;
+        padding-bottom: 0.3rem;
+        font-size: 0.7rem;
+
+        &:hover {
+            border-bottom: 2px solid variables.$Black-Font;
+        }
+    }
+}
