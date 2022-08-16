@@ -1,9 +1,11 @@
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Navigation from './components/navigation/navigation';
 
 function App() {
   return (
     <div>
-      <h1>app</h1>
+      <Navigation />
     </div>
   );
 }
