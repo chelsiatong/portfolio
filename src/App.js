@@ -1,7 +1,8 @@
 import './App.css';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from './components/navigation/navigation';
-import Home from './pages/homepage/homepage';
+import Homepage from './pages/homepage/homepage';
 import About from './components/about/about';
 import Projects from './components/projects/projects';
 import Contact from './components/contacts/contacts';
@@ -9,9 +10,9 @@ import Contact from './components/contacts/contacts';
 function App() {
   return (
     <BrowserRouter>
+      <Navigation />
       <Switch>
-        <Navigation />
-        <Route to="/" exact component={Home} />
+        <Route to="/" exact component={Homepage} />
         <Route to="/about" component={About} />
         <Route to="/projects" component={Projects} />
         <Route to="/contact" component={Contact} />
