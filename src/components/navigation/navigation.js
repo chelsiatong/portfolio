@@ -1,15 +1,16 @@
 import './navigation.scss';
+import { Link, NavLink } from 'react-router-dom';
 
 function Navigation() {
     return (
         <div className="sidebar" >
             <div className="sidebar__container" >
-                <h1 className="sidebar__initial" >CT</h1>
+                <Link to="/" className="sidebar__initial" >CT</Link>
                 <div className="sidebar__header" >
-                    <h3 className="sidebar__nav">home</h3>
-                    <h3 className="sidebar__nav" >about</h3>
-                    <h3 className="sidebar__nav" >projects</h3>
-                    <h3 className="sidebar__nav" >contact</h3>
+                    <NavLink to="/" className="sidebar__nav">home</NavLink>
+                    <NavLink to="/about" className="sidebar__nav" >about</NavLink>
+                    <NavLink to="/projects" className="sidebar__nav" >projects</NavLink>
+                    <NavLink to="/contact" className="sidebar__nav" >contact</NavLink>
                 </div>
             </div>
         </div>
