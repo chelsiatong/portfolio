@@ -1,1 +1,89 @@
 @use '../../styles/partials/global';
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/variables';
+
+a {
+    text-decoration: none;
+    color: variables.$Black-Font;
+}
+
+.sidebar {
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid variables.$Black-Font;
+    margin: 0 1rem;
+
+    @include mixins.tablet {
+        margin: 0 1rem;
+    }
+
+    @include mixins.desktop {
+        margin: 0 1.5rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        @include mixins.tablet {
+            margin-top: 1.5rem;
+        }
+
+        @include mixins.desktop {
+            margin-top: 2.5rem;
+        
+        }
+    }
+
+    &__initial {
+        margin: 0;
+        padding-left: 0.5rem;
+        padding-top: 0.6rem;
+        font-size: 2rem;
+        letter-spacing: 6px;
+
+        @include mixins.tablet {
+            font-size: 3rem;
+            padding-left: 1rem;
+        }
+
+        @include mixins.desktop {
+            font-size: 4rem;
+            letter-spacing: 8px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        margin-top: 0.4rem;
+
+        @include mixins.tablet {
+            margin-top: 0;
+            margin-right: 1rem;
+        }
+
+    }
+
+    &__nav {
+        margin-right: 1rem;
+        padding-bottom: 0;
+        font-size: 0.7rem;
+        margin-top: 0.65rem;
+
+        @include mixins.tablet {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-right: 1.2rem;
+        }
+
+        @include mixins.desktop {
+            font-size: 1.5rem;
+            margin-right: 2rem;
+            margin-top: 1.7rem;
+        }
+
+        &:hover {
+            border-bottom: 2px solid variables.$Black-Font;
+        }
+    }
+}

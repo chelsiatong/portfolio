@@ -1,12 +1,22 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from './components/navigation/navigation';
+import Home from './pages/homepage/homepage';
+import About from './components/about/about';
+import Projects from './components/projects/projects';
+import Contact from './components/contacts/contacts';
 
 function App() {
   return (
-    <div>
-      <Navigation />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Navigation />
+        <Route to="/" exact component={Home} />
+        <Route to="/about" component={About} />
+        <Route to="/projects" component={Projects} />
+        <Route to="/contact" component={Contact} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
