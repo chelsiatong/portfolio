@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from './components/navigation/navigation';
 import Homepage from './pages/homepage/homepage';
@@ -9,8 +10,8 @@ import Contact from './components/contacts/contacts';
 function App() {
   return (
     <BrowserRouter>
+      <Navigation />
       <Switch>
-        <Navigation />
         <Route to="/" exact component={Homepage} />
         <Route to="/about" component={About} />
         <Route to="/projects" component={Projects} />
