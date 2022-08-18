@@ -11,7 +11,6 @@ function About() {
                 <p className="about__position" > front-end <br></br> developer</p>
                 <img className="about__mountain--two" src={mountainTwo} alt="portrait-mountain"></img>
                 <img className="about__mountain--one" src={mountainOne} alt="landscape-mountain"></img>
-
             </div>
             <h2 className="about__first" >chelsia</h2>
         </section>
