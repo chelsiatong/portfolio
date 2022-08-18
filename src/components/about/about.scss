@@ -1,3 +1,125 @@
 @use '../../styles/partials/global';
 @use '../../styles/partials/mixins';
 @use '../../styles/partials/variables';
+
+
+span {
+    text-decoration: underline;
+}
+
+.about {
+    margin: 1rem;
+
+    @include mixins.desktop {
+        margin: 0.5rem 2rem;
+    }
+
+    &__title {
+        font-size: 2.3rem;
+        text-align: end;
+        margin-bottom: 0;
+        margin-top: 1rem;
+
+        @include mixins.tablet {
+            font-size: 3rem;
+        }
+
+        @include mixins.desktop {
+            font-size: 4rem;
+        }
+    }
+
+    &__last {
+        writing-mode: vertical-rl;
+        margin: 0;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+
+        @include mixins.tablet {
+            font-size: 2rem;
+        }
+
+        @include mixins.desktop {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__first {
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+        
+        @include mixins.tablet {
+            font-size: 3.5rem;
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__section {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
+
+    &__position {
+        line-height: 1.5rem;
+        display: block;
+        margin: auto;
+        font-size: 25px;
+        border-bottom: 2px solid variables.$Black-Font;
+        border-top: 2px solid variables.$Black-Font;
+        padding-top: 0.3rem;
+
+        @include mixins.tablet {
+            font-size: 40px;
+            line-height: 2.5rem;
+        }
+
+        @include mixins.desktop {
+            font-size: 60px;
+            line-height: 3rem;
+        }
+    }
+
+    &__mountain {
+        &--one {
+            width: 30%;
+
+            @include mixins.tablet {
+                width: 40%;
+            }
+        }
+
+        &--two {
+            width: 20%;
+            margin: 0 0.5rem;
+
+            @include mixins.tablet {
+                width: 25%;
+            }
+        }
+    }
+
+    &__history {
+        text-align: end;
+        border-right: 2px solid variables.$Black-Font;
+        line-height: 1.1rem;
+        padding-right: 1rem;
+
+        @include mixins.tablet {
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    &__work {
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        border-left: 2px solid variables.$Black-Font;
+        padding-left: 1rem;
+
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+}
