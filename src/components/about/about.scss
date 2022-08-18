@@ -2,6 +2,11 @@
 @use '../../styles/partials/mixins';
 @use '../../styles/partials/variables';
 
+
+span {
+    text-decoration: underline;
+}
+
 .about {
     margin: 1rem;
 
@@ -91,6 +96,30 @@
             @include mixins.tablet {
                 width: 25%;
             }
+        }
+    }
+
+    &__history {
+        text-align: end;
+        border-right: 2px solid variables.$Black-Font;
+        line-height: 1.1rem;
+        padding-right: 1rem;
+
+        @include mixins.tablet {
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    &__work {
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        border-left: 2px solid variables.$Black-Font;
+        padding-left: 1rem;
+
+        @include mixins.tablet {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
         }
     }
 }
