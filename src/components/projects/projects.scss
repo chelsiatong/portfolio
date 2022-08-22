@@ -39,16 +39,33 @@ button {
         margin-top: 1rem;
         text-align: center;
 
-        &--checkit {
+        &--container {
             border: 2px dashed variables.$Light-Grey;
+            border-radius: 5px;
+            margin-bottom: 2rem;
 
-            &__image {
-                height: 18rem;
+            &__checkit, &__googlemoods, &__instagram, &__office {
                 filter: grayscale(100%);
                 margin-bottom: 1rem;
                 border: 1px solid variables.$Light-Grey;
                 padding: 0.5rem;
                 border-radius: 10px;
+            }
+
+            &__checkit {
+                height: 18rem;
+            }
+
+            &__googlemoods {
+                height: 16.5rem;
+            }
+
+            &__instagram {
+                height: 17.5rem;
+            }
+
+            &__office {
+                height: 17.5rem;
             }
         }
     }
