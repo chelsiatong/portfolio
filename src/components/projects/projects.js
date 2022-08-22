@@ -36,10 +36,7 @@ function Projects() {
                     <img className="projects__all--container__office" src={Office} alt="the-office"></img>
                     <a href="https://theoffice-he-said-she-said.netlify.app/"><button>view</button></a>
                 </div>
-
             </div>
-
-
         </section>
 
     );

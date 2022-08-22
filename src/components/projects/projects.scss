@@ -11,8 +11,9 @@ button {
     font-family: 'Vogue';
     font-size: 1rem;
     padding: 0.5rem 1.5rem 0.3rem;
-    margin-bottom: 1rem;
+    margin: 1.5rem 0;
 }
+
 .projects {
     margin: 1rem;
 
@@ -40,16 +41,17 @@ button {
         text-align: center;
 
         &--container {
-            border: 2px dashed variables.$Light-Grey;
-            border-radius: 5px;
-            margin-bottom: 2rem;
+            border-top: 2px dashed variables.$Light-Grey;
+            display: flex;
+            flex-direction: column;
 
             &__checkit, &__googlemoods, &__instagram, &__office {
                 filter: grayscale(100%);
-                margin-bottom: 1rem;
                 border: 1px solid variables.$Light-Grey;
                 padding: 0.5rem;
                 border-radius: 10px;
+                display: block;
+                margin: auto;
             }
 
             &__checkit {
