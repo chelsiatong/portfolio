@@ -1,0 +1,55 @@
+@use '../../styles/partials/global';
+@use '../../styles/partials/mixins';
+@use '../../styles/partials/variables';
+@use '../../styles/partials/fonts';
+
+button {
+    border: 1px solid variables.$Black-Font;
+    border-radius: 5px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 'Vogue';
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem 0.3rem;
+    margin-bottom: 1rem;
+}
+.projects {
+    margin: 1rem;
+
+    &__head {
+        text-align: end;
+        @include mixins.tablet {
+            display: flex;
+        }
+
+        &--picture {
+            width: 100%;
+            height: 9rem;
+            margin-bottom: 1rem;
+        }
+
+        &--arrow {
+            height: 3rem;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    &__all {
+        margin-top: 1rem;
+        text-align: center;
+
+        &--checkit {
+            border: 2px dashed variables.$Light-Grey;
+
+            &__image {
+                height: 18rem;
+                filter: grayscale(100%);
+                margin-bottom: 1rem;
+                border: 1px solid variables.$Light-Grey;
+                padding: 0.5rem;
+                border-radius: 10px;
+            }
+        }
+    }
+}
