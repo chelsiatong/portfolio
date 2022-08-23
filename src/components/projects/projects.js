@@ -9,11 +9,13 @@ import Office from '../../assets/images/office.jpeg';
 function Projects() {
     return (
         <section className="projects" >
-            <div className="projects__head" >
-                <h1 className="projects__head--title" >projects</h1>
-                <p className="projects__head--description" >add description</p>
+            <div className="projects__section" >
+                <div className="projects__head" >
+                    <h1 className="projects__head--title" >projects</h1>
+                    <p className="projects__head--description" >add description</p>
+                </div>
+                <img className="projects__head--picture" src={Forest} alt="forest"></img>
             </div>
-            <img className="projects__head--picture" src={Forest} alt="forest"></img>
             <img className="projects__head--arrow" src={Arrow} alt="arrow"></img>
             <div className="projects__all" >
                 <div className="projects__all--container">
