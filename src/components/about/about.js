@@ -13,7 +13,7 @@ function About() {
                 <img className="about__mountain--one" src={mountainOne} alt="landscape-mountain"></img>
             </div>
             <div>
-                <p className="about__history" >Since I was little, I've always needed a plan of which I could follow to have a successful career and lifestyle. Now, after 5 years of studying analytical chemistry, I’ve finally decided to make the tough decision and do what I truly enjoy - Web Development! </p>
+                <p className="about__history" >At a young age, I've always required a plan of which I could follow to have a successful career and lifestyle. Now, after 5 years of studying analytical chemistry, I’ve finally decided to make the tough decision and do what I truly enjoy - Web Development! </p>
                 <p className="about__work"> Let's Talk! <br></br> I am available for both <span>full-time</span>, and <span>freelance</span> positions!</p>
             </div>
             <h2 className="about__first" >chelsia</h2>
