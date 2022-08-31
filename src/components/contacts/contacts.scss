@@ -3,15 +3,31 @@
 @use '../../styles/partials/variables';
 @use '../../styles/partials/fonts';
 
+h2 {
+    margin: 0 1rem;
+
+    @include mixins.tablet {
+        margin: 0 5.5rem;
+    }
+}
 
 .contacts {
     margin: 1rem;
+    height: 350px;
+
+    @include mixins.tablet {
+        height: 500px;
+    }
+
+    @include mixins.desktop{
+        height: 690px;
+    }
 
     &__words{
         display: flex;
         justify-content: center;
         position: relative;
-        bottom: 18rem;
+        bottom: 16rem;
         gap: 1rem;
         margin-top: 2rem;
 
@@ -22,13 +38,13 @@
         }
 
         @include mixins.desktop {
-            font-size: 2rem;
-            bottom: 30rem;
+            font-size: 1.8rem;
+            bottom: 28rem;
         }
     }
 
     &__mountain-picture {
-        max-width: 17rem;
+        max-width: 16rem;
         display: block;
         margin: auto;
         filter: grayscale(100%);
@@ -41,7 +57,7 @@
         }
 
         @include mixins.desktop {
-            max-width: 40rem;
+            max-width: 37rem;
             margin-top: 3rem;
         }
     }
