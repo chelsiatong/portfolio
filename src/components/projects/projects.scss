@@ -13,13 +13,33 @@ button {
     padding: 0.5rem 1.5rem 0.3rem;
     margin: 1.5rem 0;
 
-    @include mixins.tablet {
-        font-size: 1.3rem;
-        padding: 0.5rem 3rem 0.3rem;
+    &:hover {
+        color:variables.$Hover;
+        border-color: variables.$Hover;
+        opacity: 80%;
+
+        @include mixins.tablet {
+            font-size: 1.3rem;
+            padding: 0.5rem 3rem 0.3rem;
+        }
+    }   
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li { 
+    &:hover {
+        font-weight: 600;
     }
 }
 
 h2 {
+    opacity: 70%;
+
     @include mixins.tablet {
         font-size: 2rem;
     }
@@ -39,6 +59,10 @@ h2 {
             justify-content: space-between;
             margin-bottom: 1rem;
         }
+
+        @include mixins.desktop {
+            margin: 2rem 0;
+        }
     }
 
     &__head {
@@ -49,10 +73,18 @@ h2 {
             width: 47%;
         }
 
+        @include mixins.tablet {
+            margin-top: 1rem;
+        }
+
         &--title {
             @include mixins.tablet {
                 margin-top: 0;
-                font-size: 2rem;
+                font-size: 2.7rem;
+            }
+
+            @include mixins.desktop {
+                font-size: 4rem;
             }
         }
 
@@ -62,8 +94,16 @@ h2 {
             padding-top: 0.2rem;
 
             @include mixins.tablet {
-                font-size: 1.25rem;
+                font-size: 1.5rem;
+                padding-top: 0.4rem;
+                line-height: 1.8rem;
+            }
 
+            @include mixins.desktop {
+                font-size: 2.7rem;
+                line-height: 2.5rem;
+                padding-top: 0.7rem;
+                padding-bottom: 0.2rem;
             }
         }
 
@@ -80,6 +120,38 @@ h2 {
             height: 3rem;
             display: block;
             margin: auto;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    &__nav {
+        background-color: variables.$Light-Grey;
+        border-radius: 5px;
+        opacity: 60%;
+        padding: 0.5rem;
+        margin-bottom:1rem;
+        font-size: 0.5rem;
+
+        @include mixins.tablet {
+            font-size: 0.63rem;
+            padding: 0.8rem;
+        }
+
+        @include mixins.desktop {
+            font-size: 1.1rem;
+            padding: 1.2rem;
+        }
+
+        &--edit {
+            padding-top: 0.1rem;
+
+            @include mixins.tablet {
+                padding-top: 0.15rem;
+            }
+
+            @include mixins.desktop {
+                padding-top: 0.25rem;
+            }
         }
     }
 
