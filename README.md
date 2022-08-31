@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi! I'm Chelsia, a new front-end web developer that has a deep interest in UI/UX design! I'm located in Toronto, and I am currently open for any full-time job opportunities available!
 
-## Available Scripts
+## Deployed Website
 
-In the project directory, you can run:
+Add site here
 
 ### `npm start`
 
