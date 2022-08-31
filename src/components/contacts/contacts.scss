@@ -2,3 +2,72 @@
 @use '../../styles/partials/mixins';
 @use '../../styles/partials/variables';
 @use '../../styles/partials/fonts';
+
+
+.contacts {
+    margin: 1rem;
+
+    &__words{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 18rem;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        @include mixins.tablet {
+            font-size: 1.4rem;
+            bottom: 20rem;
+            margin-top: 0;
+        }
+
+        @include mixins.desktop {
+            font-size: 2rem;
+            bottom: 30rem;
+        }
+    }
+
+    &__mountain-picture {
+        max-width: 17rem;
+        display: block;
+        margin: auto;
+        filter: grayscale(100%);
+        padding: 0.5rem;
+        border: 2px solid variables.$Black-Font;
+
+        @include mixins.tablet {
+            max-width: 25rem;
+            margin-top: 2rem;
+        }
+
+        @include mixins.desktop {
+            max-width: 40rem;
+            margin-top: 3rem;
+        }
+    }
+
+    &__background {
+        opacity: 20%;
+        z-index: -1;
+
+        &--add {
+            display: none;
+            @include mixins.tablet {
+                display: flex;
+                opacity: 20%;
+                z-index: -1;
+            }
+
+            &__two {
+                display: none;
+
+                @include mixins.desktop {
+                    display: flex;
+                    opacity: 20%;
+                    z-index: -1;
+                }
+
+            }
+        }
+    }
+}
