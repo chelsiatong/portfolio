@@ -1,3 +1,105 @@
 @use '../../styles/partials/global';
 @use '../../styles/partials/mixins';
 @use '../../styles/partials/variables';
+@use '../../styles/partials/fonts';
+
+
+.contacts {
+    @include mixins.desktop {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__style {
+        height: 340px;
+        margin: 1rem;
+
+        @include mixins.tablet {
+            height: 520px;
+        }
+
+        @include mixins.desktop {
+            height: 710px;
+            margin-top: 0;
+            margin-left: 2rem;
+        }
+    }
+
+    &__words {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 16rem;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        @include mixins.tablet {
+            font-size: 1.4rem;
+            bottom: 20rem;
+            margin-top: 0;
+        }
+
+        @include mixins.desktop {
+            font-size: 1.5rem;
+            bottom: 28rem;
+        }
+    }
+
+    &__mountain-picture {
+        max-width: 16rem;
+        display: block;
+        margin: auto;
+        filter: grayscale(100%);
+        padding: 0.5rem;
+        border: 2px solid variables.$Black-Font;
+
+        @include mixins.tablet {
+            max-width: 25rem;
+            margin-top: 2rem;
+        }
+
+        @include mixins.desktop {
+            max-width: 27rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__background {
+        opacity: 20%;
+        z-index: -1;
+
+        &--add {
+            display: none;
+
+            @include mixins.tablet {
+                display: flex;
+                opacity: 20%;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0 1rem;
+        border-top: 1px solid variables.$Black-Font;
+        border-bottom: 1px solid variables.$Black-Font;
+        padding-top: 0.5rem;
+
+        @include mixins.tablet {
+            margin: 0 20rem;
+        }
+
+        @include mixins.desktop {
+            margin: 0 1rem;
+        }
+    }
+
+    &__section {
+        text-align: center;
+
+        @include mixins.desktop {
+            margin-top: 2rem;
+
+        }
+    }
+}
