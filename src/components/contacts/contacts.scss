@@ -3,25 +3,11 @@
 @use '../../styles/partials/variables';
 @use '../../styles/partials/fonts';
 
-h2 {
-    margin: 0 1rem;
-    border-top: 1px solid variables.$Black-Font;
-    border-bottom: 1px solid variables.$Black-Font;
-    padding-top: 0.5rem;
-
-    @include mixins.tablet {
-        margin: 0 20rem;
-    }
-
-    @include mixins.desktop {
-        margin: 0 1rem;
-    }
-
-}
 
 .contacts {
     @include mixins.desktop {
         display: flex;
+        justify-content: space-evenly;
     }
 
     &__style {
@@ -32,14 +18,14 @@ h2 {
             height: 520px;
         }
 
-        @include mixins.desktop{
+        @include mixins.desktop {
             height: 710px;
             margin-top: 0;
             margin-left: 2rem;
         }
     }
 
-    &__words{
+    &__words {
         display: flex;
         justify-content: center;
         position: relative;
@@ -84,11 +70,27 @@ h2 {
 
         &--add {
             display: none;
+
             @include mixins.tablet {
                 display: flex;
                 opacity: 20%;
                 z-index: -1;
             }
+        }
+    }
+
+    &__title {
+        margin: 0 1rem;
+        border-top: 1px solid variables.$Black-Font;
+        border-bottom: 1px solid variables.$Black-Font;
+        padding-top: 0.5rem;
+
+        @include mixins.tablet {
+            margin: 0 20rem;
+        }
+
+        @include mixins.desktop {
+            margin: 0 1rem;
         }
     }
 

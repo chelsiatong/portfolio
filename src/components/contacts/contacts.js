@@ -14,7 +14,7 @@ function Contacts() {
                 </div>
             </div>
             <div className="contacts__section" >
-                <h2>stay in touch.</h2>
+                <h2 className="contacts__title" >stay in touch.</h2>
             </div>
         </section>
 
