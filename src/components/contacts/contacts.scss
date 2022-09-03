@@ -86,11 +86,11 @@
         padding-top: 0.5rem;
 
         @include mixins.tablet {
-            margin: 0 20rem;
+            margin: 0 15rem;
         }
 
         @include mixins.desktop {
-            margin: 0 1rem;
+            margin: 0 10rem;
         }
     }
 
