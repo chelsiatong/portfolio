@@ -99,7 +99,21 @@
 
         @include mixins.desktop {
             margin-top: 2rem;
-
         }
+    }
+
+    &__form {
+        margin-top: 1rem;
+    }
+
+    &__area {
+        display: flex;
+        margin-bottom: 1rem;
+        justify-content: space-evenly;
+    }
+
+    &__subtitle {
+        border-left: 1px solid variables.$Black-Font;
+        padding-left: 5px;
     }
 }

@@ -15,6 +15,7 @@ function Contacts() {
             }, (error) => {
                 console.log(error.text);
             });
+        event.target.reset()
     }
 
     return (
@@ -31,16 +32,20 @@ function Contacts() {
                 <h2 className="contacts__title" >stay in touch.</h2>
                 <form onSubmit={sendEmail}>
                     <div className="contacts__form" >
-                        <div className="contacts__area--name">
-                            <input type="text" className="contacts__control" placeholder="Name" name="name" />
-                        </div>
-                        <div className="contacts__area--email" >
-                            <input type="text" className="contacts__control" placeholder="Email" name="email" />
-                        </div>
-                        <div className="contacts__area--subject">
+                        <div className="contacts__area contacts__area--subject">
+                            <h3 className="contacts__subtitle">Subject</h3>
                             <input type="text" className="contacts__control" placeholder="Subject" name="subject" />
                         </div>
-                        <div className="contacts__area--message">
+                        <div className="contacts__area contacts__area--name">
+                            <h3 className="contacts__subtitle">Full Name</h3>
+                            <input type="text" className="contacts__control" placeholder="Full Name" name="name" />
+                        </div>
+                        <div className="contacts__area contacts__area--email" >
+                            <h3 className="contacts__subtitle">Email</h3>
+                            <input type="text" className="contacts__control" placeholder="Email" name="email" />
+                        </div>
+                        <div className="contacts__area contacts__area--message">
+                            <h3>Message</h3>
                             <textarea rows="4" className="contacts__control" placeholder="Your Message" name="message" />
                         </div>
                         <div className="contacts__area--send" >
