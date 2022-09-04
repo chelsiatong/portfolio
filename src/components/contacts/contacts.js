@@ -38,11 +38,11 @@ function Contacts() {
                         </div>
                         <div className="contacts__form--info" >
                             <div className="contacts__area contacts__area--name">
-                                <h3 className="contacts__subtitle">Full Name</h3>
+                                <h3 className="contacts__subtitle contacts__subtitle--fullname">Full Name</h3>
                                 <input type="text" className="contacts__control" placeholder="Full Name" name="name" />
                             </div>
                             <div className="contacts__area contacts__area--email" >
-                                <h3 className="contacts__subtitle">Email</h3>
+                                <h3 className="contacts__subtitle contacts__subtitle--email">Email</h3>
                                 <input type="text" className="contacts__control" placeholder="Email" name="email" />
                             </div>
                         </div>

@@ -10,6 +10,11 @@ textarea {
     font-family: 'Vogue', sans-serif;
     margin-top: 0.5rem;
     width: 80%;
+
+    @include mixins.tablet {
+        font-size: 1rem;
+    }
+
 }
 
 .contacts {
@@ -48,8 +53,7 @@ textarea {
         }
 
         @include mixins.desktop {
-            font-size: 1.5rem;
-            bottom: 28rem;
+            bottom: 25rem;
         }
     }
 
@@ -98,7 +102,7 @@ textarea {
         }
 
         @include mixins.desktop {
-            margin: 0 10rem;
+            margin: 0 7rem;
         }
     }
 
@@ -111,13 +115,12 @@ textarea {
     }
 
     &__form {
-        margin-top: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 1rem;
 
         &--info {
             @include mixins.tablet {
                 display: flex;
+                justify-content: space-between;
             }
         }
     }
@@ -126,7 +129,12 @@ textarea {
         display: flex;
         margin-bottom: 1rem;
         justify-content: start;
-        gap: 1rem;
+
+        &--message {
+            @include mixins.tablet {
+                margin-left: 0.3rem;
+            }
+        }
 
         &--send {
             margin-bottom: 1rem;
@@ -141,7 +149,15 @@ textarea {
                 color: variables.$Newspaper;
                 font-family: 'Vogue', sans-serif;
                 font-weight: 600;
+
+                @include mixins.tablet {
+                    padding: 0.6rem 6rem;
+                }
             }
+        }
+
+        &--name {
+            margin-right: 1rem;
         }
 
     }
@@ -149,6 +165,20 @@ textarea {
     &__subtitle {
         font-size: 1rem;
         inline-size: 7rem;
+        text-align: start;
+
+        @include mixins.tablet {
+            font-size: 1.3rem;
+            inline-size: 9rem;
+
+        }
+
+        &--fullname {
+            @include mixins.tablet {
+                margin-right: 2.3rem;
+                inline-size: 11rem;
+            }
+        }
     }
 
     &__control {
@@ -157,5 +187,16 @@ textarea {
         margin-top: 0.5rem;
         padding-left: 0.5rem;
         font-family: 'Vogue', sans-serif;
+
+        @include mixins.tablet {
+            width: 95%;
+            margin-top: 0.75rem;
+            font-size: 1rem;
+        }
+
+        &--subject {
+            margin-left: 1.5rem;
+        }
+
     }
 }
