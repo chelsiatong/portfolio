@@ -34,19 +34,21 @@ function Contacts() {
                     <div className="contacts__form" >
                         <div className="contacts__area contacts__area--subject">
                             <h3 className="contacts__subtitle">Subject</h3>
-                            <input type="text" className="contacts__control" placeholder="Subject" name="subject" />
+                            <input type="text" className="contacts__control contacts__control--subject" placeholder="Subject" name="subject" />
                         </div>
-                        <div className="contacts__area contacts__area--name">
-                            <h3 className="contacts__subtitle">Full Name</h3>
-                            <input type="text" className="contacts__control" placeholder="Full Name" name="name" />
-                        </div>
-                        <div className="contacts__area contacts__area--email" >
-                            <h3 className="contacts__subtitle">Email</h3>
-                            <input type="text" className="contacts__control" placeholder="Email" name="email" />
+                        <div className="contacts__form--info" >
+                            <div className="contacts__area contacts__area--name">
+                                <h3 className="contacts__subtitle">Full Name</h3>
+                                <input type="text" className="contacts__control" placeholder="Full Name" name="name" />
+                            </div>
+                            <div className="contacts__area contacts__area--email" >
+                                <h3 className="contacts__subtitle">Email</h3>
+                                <input type="text" className="contacts__control" placeholder="Email" name="email" />
+                            </div>
                         </div>
                         <div className="contacts__area contacts__area--message">
-                            <h3>Message</h3>
-                            <textarea rows="4" className="contacts__control" placeholder="Your Message" name="message" />
+                            <h3 className="contacts__subtitle" >Message</h3>
+                            <textarea placeholder="Your Message" name="message" />
                         </div>
                         <div className="contacts__area--send" >
                             <input type="submit" className="contacts__area--send__button" value="Send" />
