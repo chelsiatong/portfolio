@@ -39,15 +39,15 @@ function Contacts() {
                         <div className="contacts__form--info" >
                             <div className="contacts__area contacts__area--name">
                                 <h3 className="contacts__subtitle contacts__subtitle--fullname">Full Name</h3>
-                                <input type="text" className="contacts__control" placeholder="Full Name" name="name" />
+                                <input type="text" className="contacts__control contacts__control--name" placeholder="Full Name" name="name" />
                             </div>
                             <div className="contacts__area contacts__area--email" >
                                 <h3 className="contacts__subtitle contacts__subtitle--email">Email</h3>
-                                <input type="text" className="contacts__control" placeholder="Email" name="email" />
+                                <input type="text" className="contacts__control contacts__control--email" placeholder="Email" name="email" />
                             </div>
                         </div>
                         <div className="contacts__area contacts__area--message">
-                            <h3 className="contacts__subtitle" >Message</h3>
+                            <h3 className="contacts__subtitle contacts__subtitle--message" >Message</h3>
                             <textarea placeholder="Your Message" name="message" />
                         </div>
                         <div className="contacts__area--send" >
