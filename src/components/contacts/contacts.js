@@ -21,7 +21,7 @@ function Contacts() {
     return (
         <section className="contacts" >
             <div className="contacts__style">
-                <img className="contacts__mountain-picture" src={ContactPic} alt="Contact-mountain-picture" ></img>
+                <img className="contacts__mountain-picture" src={ContactPic} alt="Contact-mountain" ></img>
                 <div className="contacts__words">
                     <h1 className="contacts__background" >contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me </h1>
                     <h1 className="contacts__background" >contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me </h1>
