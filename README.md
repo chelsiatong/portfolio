@@ -4,7 +4,7 @@ Hi! I'm Chelsia, a new front-end web developer that has an additional deep inter
 
 ## Deployed Website
 
-chelsiatong-portfolio.netlify.app
+https://chelsiatong-portfolio.netlify.app/
 
 ### Contact Me 🌱
 
