@@ -147,7 +147,7 @@ textarea {
     &__area {
         display: flex;
         margin-bottom: 1rem;
-        justify-content: start;
+        justify-content: flex-start;
 
         &--message {
             @include mixins.tablet {
