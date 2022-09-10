@@ -47,7 +47,7 @@ span {
     &__first {
         letter-spacing: 2px;
         font-size: 2.5rem;
-        
+
         @include mixins.tablet {
             font-size: 3.5rem;
             margin-top: 1.5rem;
@@ -86,7 +86,7 @@ span {
             width: 30%;
 
             @include mixins.tablet {
-                width: 40%;
+                width: 35%;
             }
         }
 
@@ -95,7 +95,7 @@ span {
             margin: 0 0.5rem;
 
             @include mixins.tablet {
-                width: 25%;
+                width: 20%;
             }
         }
     }
@@ -110,6 +110,10 @@ span {
             font-size: 1.3rem;
             line-height: 1.5rem;
         }
+
+        @include mixins.desktop {
+            font-size: 1.5rem;
+        }
     }
 
     &__work {
@@ -121,6 +125,10 @@ span {
         @include mixins.tablet {
             font-size: 1.5rem;
             line-height: 1.5rem;
+        }
+
+        @include mixins.desktop {
+            font-size: 1.8rem;
         }
     }
 }
