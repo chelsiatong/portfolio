@@ -6,7 +6,7 @@
     margin: 1rem;
 
     @include mixins.tablet {
-        margin: 1.5rem ;
+        margin: 1.5rem;
     }
 
     @include mixins.desktop {
@@ -39,14 +39,14 @@
             width: 80%;
         }
 
-        @include mixins.desktop{
+        @include mixins.desktop {
             width: 45%;
             // margin: 0 1rem 0 2rem;
             // display: flex;
             // flex-direction: column;
             // justify-content: space-evenly;
         }
-        
+
     }
 
     &__portfolio {
@@ -95,21 +95,41 @@
     }
 
     &__position {
-        margin-top: 1rem;
+        margin: 1rem 0 0.5rem;
         letter-spacing: 1px;
         line-height: 28px;
 
         @include mixins.tablet {
             font-size: 2rem;
             line-height: 32px;
+            margin-bottom: 0.5rem;
         }
 
         @include mixins.desktop {
             margin-top: 1.5rem;
             line-height: 40px;
             font-size: 2.5rem;
-            margin-bottom: 0;
+            margin-bottom: 0.8rem;
         }
-        
+
+        &--ui {
+            text-align: right;
+            line-height: 28px;
+            border-top: 2px dotted variables.$Black-Font;
+            padding: 0.8rem 0;
+            margin: 0;
+
+            @include mixins.tablet {
+                font-size: 2rem;
+                line-height: 32px;
+            }
+
+            @include mixins.desktop {
+                font-size: 2.5rem;
+                line-height: 40px;
+                padding-top: 1rem;
+            }
+        }
+
     }
 }
