@@ -14,7 +14,7 @@ button {
     margin: 1.5rem 0;
 
     &:hover {
-        color:variables.$Hover;
+        color: variables.$Hover;
         border-color: variables.$Hover;
         opacity: 80%;
 
@@ -22,7 +22,7 @@ button {
             font-size: 1.3rem;
             padding: 0.5rem 3rem 0.3rem;
         }
-    }   
+    }
 }
 
 ul {
@@ -31,7 +31,7 @@ ul {
     justify-content: space-evenly;
 }
 
-li { 
+li {
     &:hover {
         font-weight: 600;
     }
@@ -129,7 +129,7 @@ h2 {
         border-radius: 5px;
         opacity: 60%;
         padding: 0.5rem;
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
         font-size: 0.5rem;
 
         @include mixins.tablet {
@@ -164,7 +164,10 @@ h2 {
             display: flex;
             flex-direction: column;
 
-            &__checkit, &__googlemoods, &__instagram, &__office {
+            &__checkit,
+            &__googlemoods,
+            &__instagram,
+            &__office {
                 filter: grayscale(100%);
                 border: 1px solid variables.$Light-Grey;
                 padding: 0.5rem;
