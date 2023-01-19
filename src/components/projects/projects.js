@@ -1,5 +1,4 @@
 
-
 import './projects.scss';
 import Arrow from '../../assets/images/arrow.png';
 import Checkit from '../../assets/images/checkit.jpeg';

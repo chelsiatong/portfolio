@@ -130,6 +130,56 @@
                 padding-top: 1rem;
             }
         }
+    }
 
+    &__footer {
+        border-top: 1px solid variables.$Light-Grey;
+        text-align: center;
+        margin: 0 1rem;
+
+        @include mixins.tablet {
+            margin: 0 6rem;
+        }
+
+        @include mixins.desktop {
+            margin: 0 3rem;
+        }
+
+        &--linkedin {
+            width: 25px;
+            height: 25px;
+            opacity: 30%;
+            margin-top: 3px;
+
+            @include mixins.tablet {
+                width: 30px;
+                height: 30px;
+            }
+
+            @include mixins.desktop {
+                width: 35px;
+                height: 35px;
+                margin-top: 0.5rem;
+            }
+        }
+
+        &--git {
+            width: 20px;
+            height: 20px;
+            opacity: 30%;
+            margin-bottom: 3px;
+            margin-left: 0.5rem;
+
+            @include mixins.tablet {
+                width: 25px;
+                height: 25px;
+            }
+
+            @include mixins.desktop {
+                width: 30px;
+                height: 30px;
+            }
+
+        }
     }
 }
