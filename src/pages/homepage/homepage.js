@@ -11,7 +11,6 @@ function Homepage() {
                 <h1 className="home__name">chelsia tong</h1>
                 <h2 className="home__position">front-end <br></br> web developer</h2>
                 <h2 className="home__position--ui">UI/ UX <br></br> designer</h2>
-
             </div>
         </section>
     );
