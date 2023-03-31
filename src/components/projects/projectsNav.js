@@ -34,7 +34,7 @@ class ProjectsNav extends Component {
                                 </div>
                             </button>
                         </a>
-                        <a href="inStock">
+                        <a href="/inStock">
                             <button className="projects__container">
                                 <div className="projects__container--card">
                                     <h2 className="projects__container--card--inStockLogo">InStock</h2>
