@@ -5,7 +5,7 @@ function Navigation() {
     return (
         <div className="sidebar" >
             <div className="sidebar__container" >
-                <Link to="/" className="sidebar__initial" >CT</Link>
+                <Link to="/" className="sidebar__initial" >cjt</Link>
                 <div className="sidebar__header" >
                     <NavLink to="/" className="sidebar__nav">home</NavLink>
                     <NavLink to="/about" className="sidebar__nav" >about</NavLink>
