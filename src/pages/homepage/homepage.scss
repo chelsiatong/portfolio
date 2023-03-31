@@ -2,32 +2,39 @@
 @use '../../styles/partials/mixins';
 @use '../../styles/partials/variables';
 
+
+span {
+    font-weight: 500;
+    color: variables.$Orange;
+}
+
+
 .home {
     margin: 1rem 1rem 0;
 
     @include mixins.tablet {
-        margin: 1.5rem 1.5rem 0;
+        margin: 3rem 1.5rem 0;
     }
 
-    @include mixins.desktop {
-        margin: 2.5rem 2.5rem 0.5rem;
-        display: flex;
-    }
 
     &__image {
         border: 1px solid variables.$Black-Font;
+        border-radius: 5px;
         padding: 0.2rem;
-        width: 100%;
+        width: 80%;
+        display: block;
+        margin: 1rem auto;
 
         @include mixins.tablet {
-            width: 80%;
+            width: 70%;
             display: block;
-            margin: auto;
+            margin: 2rem auto;
+            padding: 0.5rem;
         }
 
         @include mixins.desktop {
             width: 50%;
-            margin: 0;
+            margin: 3rem auto;
         }
     }
 
@@ -81,54 +88,42 @@
     }
 
     &__name {
-        text-align: end;
-        font-size: 3rem;
+        text-align: center;
+        font-size: 2rem;
         margin-top: 0;
         margin-bottom: 0;
-        border-top: 2px solid variables.$Black-Font;
-        border-bottom: 2px solid variables.$Black-Font;
+        font-weight: 500;
         padding: 0.5rem 0 0;
 
         @include mixins.tablet {
-            font-size: 5rem;
+            font-size: 4rem;
+        }
+
+        @include mixins.desktop {
+            font-size: 6rem;
+            line-height: 120px;
         }
     }
 
     &__position {
-        margin: 1rem 0 0.5rem;
+        text-align: center;
+        font-weight: 100;
+        margin: 0.5rem 2rem;
         letter-spacing: 1px;
-        line-height: 28px;
+        line-height: 20px;
+        font-size: 0.8rem;
 
         @include mixins.tablet {
-            font-size: 2rem;
+            font-size: 1.5rem;
             line-height: 32px;
-            margin-bottom: 0.5rem;
+            margin: 0.5rem 3rem;
+
         }
 
         @include mixins.desktop {
-            margin-top: 1.5rem;
-            line-height: 40px;
+            margin: 0.8rem 1rem;
+            line-height: 50px;
             font-size: 2.5rem;
-            margin-bottom: 0.8rem;
-        }
-
-        &--ui {
-            text-align: right;
-            line-height: 28px;
-            border-top: 2px dotted variables.$Black-Font;
-            padding: 0.8rem 0 0.5rem;
-            margin: 0;
-
-            @include mixins.tablet {
-                font-size: 2rem;
-                line-height: 32px;
-            }
-
-            @include mixins.desktop {
-                font-size: 2.5rem;
-                line-height: 40px;
-                padding-top: 1.5rem;
-            }
         }
 
     }
@@ -143,7 +138,7 @@
         }
 
         @include mixins.desktop {
-            margin: 0 3rem;
+            margin: 0 3rem 2rem;
         }
 
         &--linkedin {
