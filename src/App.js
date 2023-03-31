@@ -6,6 +6,7 @@ import Homepage from './pages/homepage/homepage';
 import About from './components/about/about';
 import ProjectsSection from './components/projects/projectsSection';
 import Contact from './components/contacts/contacts';
+import ProjectsCheckIt from './components/projects/checkit/projects-checkit';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Homepage} />
         <Route path="/about" component={About} />
+        <Route path="/checkit" component={ProjectsCheckIt} />
         <Route path="/projects" component={ProjectsSection} />
         <Route path="/contact" component={Contact} />
       </Switch>

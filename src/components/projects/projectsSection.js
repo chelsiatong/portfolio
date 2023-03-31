@@ -7,7 +7,7 @@ class ProjectsSection extends Component {
         return (
             <div>
                 <ProjectsNav />
-                <Projects />
+                {/* <Projects /> */}
             </div>
         )
     }

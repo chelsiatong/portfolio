@@ -4,46 +4,15 @@
 @use '../../styles/partials/fonts';
 
 button {
-    border: 1px solid variables.$Black-Font;
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     border-radius: 5px;
-    background-color: transparent;
-    text-transform: uppercase;
-    font-family: 'Vogue';
     font-size: 1rem;
     padding: 0.5rem 1.5rem 0.3rem;
-    margin: 1.5rem 0;
-
-    &:hover {
-        color: variables.$Hover;
-        border-color: variables.$Hover;
-        opacity: 80%;
-
-        @include mixins.tablet {
-            font-size: 1.3rem;
-            padding: 0.5rem 3rem 0.3rem;
-        }
-    }
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-li {
-    &:hover {
-        font-weight: 600;
-    }
-}
-
-h2 {
-    opacity: 70%;
-
-    @include mixins.tablet {
-        font-size: 2rem;
-    }
-}
 
 .projects {
     margin: 1rem;
@@ -66,7 +35,7 @@ h2 {
     }
 
     &__head {
-        text-align: end;
+        // text-align: end;
 
         @include mixins.tablet {
             text-align: start;
@@ -78,6 +47,15 @@ h2 {
         }
 
         &--title {
+            font-size: 1.2rem;
+            color: variables.$Orange;
+            font-weight: 500;
+            padding: 0.5rem 0.8rem;
+            border: 1px solid variables.$Orange;
+            border-radius: 20px;
+            width: 50%;
+            text-align: center;
+
             @include mixins.tablet {
                 margin-top: 0;
                 font-size: 2.7rem;
@@ -89,22 +67,31 @@ h2 {
         }
 
         &--description {
-            border-top: 1.5px solid variables.$Black-Font;
-            border-bottom: 1.5px solid variables.$Black-Font;
-            padding-top: 0.2rem;
 
-            @include mixins.tablet {
-                font-size: 1.5rem;
-                padding-top: 0.4rem;
-                line-height: 1.8rem;
+            &__dev {
+                background-color: rgba(variables.$Light-Grey, 0.7);
+                padding: 0.8rem;
+                border-radius: 20px;
+                font-size: 0.8rem;
+
+                @include mixins.tablet {
+                    font-size: 1.5rem;
+                    padding-top: 0.4rem;
+                    line-height: 1.8rem;
+                }
+
+                @include mixins.desktop {
+                    font-size: 2.7rem;
+                    line-height: 2.5rem;
+                    padding-top: 0.7rem;
+                    padding-bottom: 0.2rem;
+                }
             }
 
-            @include mixins.desktop {
-                font-size: 2.7rem;
-                line-height: 2.5rem;
-                padding-top: 0.7rem;
-                padding-bottom: 0.2rem;
-            }
+            // &__design {
+
+            // }
+
         }
 
         &--picture {
@@ -121,6 +108,54 @@ h2 {
             display: block;
             margin: auto;
             padding-bottom: 0.5rem;
+        }
+    }
+
+    &__container {
+        background-color: rgba(variables.$Light-Grey, 0.4);
+        padding: 2rem;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+
+        &--card {
+            padding: 1rem;
+            background-color: variables.$Newspaper;
+            border: 1px solid rgba(variables.$Orange, 0.3);
+            border-radius: 20px;
+            height: 16rem;
+            width: 100%;
+
+            &--checkitLogo {
+                width: 7rem;
+                display: block;
+                margin: auto;
+                border-radius: 50%;
+            }
+
+            &--moodsLogo {
+                width: 7rem;
+                padding: 1.5rem 0 1rem;
+                display: block;
+                margin: auto;
+            }
+
+
+            &--inStockLogo {
+                font-size: 2rem;
+                padding: 1rem 0 1rem;
+                color: #2e66e5;
+                text-align: center;
+            }
+
+            &--title {
+                text-align: center;
+                font-weight: 600;
+            }
+
+            &--description {
+                text-align: center;
+                font-weight: 300;
+            }
         }
     }
 
@@ -155,58 +190,58 @@ h2 {
         }
     }
 
-    &__all {
-        margin-top: 1rem;
-        text-align: center;
+    // &__all {
+    //     margin-top: 1rem;
+    //     text-align: center;
 
-        &--container {
-            border-top: 2px dashed variables.$Light-Grey;
-            display: flex;
-            flex-direction: column;
+    //     &--container {
+    //         border-top: 2px dashed variables.$Light-Grey;
+    //         display: flex;
+    //         flex-direction: column;
 
-            &__checkit,
-            &__googlemoods,
-            &__instagram,
-            &__office {
-                filter: grayscale(100%);
-                border: 1px solid variables.$Light-Grey;
-                padding: 0.5rem;
-                border-radius: 10px;
-                display: block;
-                margin: auto;
-            }
+    //         &__checkit,
+    //         &__googlemoods,
+    //         &__instagram,
+    //         &__office {
+    //             filter: grayscale(100%);
+    //             border: 1px solid variables.$Light-Grey;
+    //             padding: 0.5rem;
+    //             border-radius: 10px;
+    //             display: block;
+    //             margin: auto;
+    //         }
 
-            &__checkit {
-                height: 18rem;
+    //         &__checkit {
+    //             height: 18rem;
 
-                @include mixins.tablet {
-                    height: 24rem;
-                }
-            }
+    //             @include mixins.tablet {
+    //                 height: 24rem;
+    //             }
+    //         }
 
-            &__googlemoods {
-                height: 16.5rem;
+    //         &__googlemoods {
+    //             height: 16.5rem;
 
-                @include mixins.tablet {
-                    height: 21.5rem;
-                }
-            }
+    //             @include mixins.tablet {
+    //                 height: 21.5rem;
+    //             }
+    //         }
 
-            &__instagram {
-                height: 17.5rem;
+    //         &__instagram {
+    //             height: 17.5rem;
 
-                @include mixins.tablet {
-                    height: 23.5rem;
-                }
-            }
+    //             @include mixins.tablet {
+    //                 height: 23.5rem;
+    //             }
+    //         }
 
-            &__office {
-                height: 17.5rem;
+    //         &__office {
+    //             height: 17.5rem;
 
-                @include mixins.tablet {
-                    height: 23.5rem;
-                }
-            }
-        }
-    }
+    //             @include mixins.tablet {
+    //                 height: 23.5rem;
+    //             }
+    //         }
+    //     }
+    // }
 }
