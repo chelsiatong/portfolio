@@ -15,11 +15,11 @@ function About() {
                 </p>
             </div>
             <div className="about__section">
-                <div>
+                <div className="about__section--1">
                     <img className="about__section--me" src={me} alt="me"></img>
                     <img className="about__section--salmon" src={salmon} alt="salmon"></img>
                 </div>
-                <div>
+                <div className="about__section--2">
                     <img className="about__section--kaws" src={kaws} alt="kaws"></img>
                     <img className="about__section--kayak" src={kayak} alt="kayak"></img>
                 </div>
