@@ -7,6 +7,7 @@ import About from './components/about/about';
 import ProjectsSection from './components/projects/projectsSection';
 import Contact from './components/contacts/contacts';
 import ProjectsCheckIt from './components/projects/checkit/projects-checkit';
+import ProjectsGoogleMoods from './components/projects/googlemoods/projects-googleMoods';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" exact component={Homepage} />
         <Route path="/about" component={About} />
         <Route path="/checkit" component={ProjectsCheckIt} />
+        <Route path="/googlemoods" component={ProjectsGoogleMoods} />
         <Route path="/projects" component={ProjectsSection} />
         <Route path="/contact" component={Contact} />
       </Switch>

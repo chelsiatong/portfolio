@@ -1,5 +1,5 @@
 import './contacts.scss';
-import ContactPic from '../../assets/images/contact-photo.jpeg';
+// import ContactPic from '../../assets/images/contact-photo.jpeg';
 import React from 'react';
 import emailjs from 'emailjs-com';
 
@@ -21,7 +21,7 @@ function Contacts() {
     return (
         <section className="contacts" >
             <div className="contacts__style">
-                <img className="contacts__mountain-picture" src={ContactPic} alt="Contact-mountain" ></img>
+                {/* <img className="contacts__mountain-picture" src={ContactPic} alt="Contact-mountain" ></img> */}
                 <div className="contacts__words">
                     <h1 className="contacts__background" >contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me </h1>
                     <h1 className="contacts__background" >contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me </h1>
