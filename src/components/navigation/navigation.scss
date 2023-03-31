@@ -30,11 +30,6 @@ a {
         @include mixins.tablet {
             margin-top: 1.5rem;
         }
-
-        @include mixins.desktop {
-            margin-top: 2.5rem;
-
-        }
     }
 
     &__initial {
@@ -54,7 +49,7 @@ a {
         }
 
         @include mixins.desktop {
-            font-size: 5rem;
+            font-size: 4rem;
             padding: 0.5rem 2rem;
             margin-left: 2rem;
         }
@@ -70,7 +65,7 @@ a {
         }
 
         @include mixins.desktop {
-            margin-top: 1.5rem;
+            margin-top: 1rem;
         }
 
     }
