@@ -19,22 +19,22 @@ span {
 
     &__image {
         border: 1px solid variables.$Black-Font;
-        border-radius: 5px;
+        border-radius: 12px;
         padding: 0.2rem;
         width: 80%;
         display: block;
-        margin: 1rem auto;
+        margin: 1.5rem auto 1rem;
 
         @include mixins.tablet {
             width: 70%;
             display: block;
-            margin: 2rem auto;
+            margin: 2.5rem auto;
             padding: 0.5rem;
         }
 
         @include mixins.desktop {
-            width: 50%;
-            margin: 3rem auto;
+            width: 43%;
+            margin: 3.5rem auto 3rem;
         }
     }
 
@@ -56,89 +56,63 @@ span {
 
     }
 
-    &__portfolio {
-        font-size: 2.5rem;
-        margin-bottom: 0;
-        letter-spacing: 2px;
-
-        @include mixins.tablet {
-            font-size: 3.5rem;
-            margin-top: 1.5rem;
-        }
-
-        @include mixins.desktop {
-            font-size: 4.5rem;
-            margin-top: 0;
-            padding-bottom: 3.5rem;
-        }
-    }
-
-    &__year {
-        margin-top: 0.5rem;
-        font-weight: 400;
-        font-size: 1.5rem;
-
-        @include mixins.tablet {
-            font-size: 2rem;
-        }
-
-        @include mixins.desktop {
-            margin-top: 0;
-        }
-    }
 
     &__name {
         text-align: center;
         font-size: 2rem;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 1.5rem 0;
         font-weight: 500;
-        padding: 0.5rem 0 0;
 
         @include mixins.tablet {
-            font-size: 4rem;
+            font-size: 5rem;
+            margin: 2rem 0 2.5rem;
         }
 
         @include mixins.desktop {
-            font-size: 6rem;
+            font-size: 5rem;
             line-height: 120px;
+            margin: 5rem 0 0;
         }
     }
 
     &__position {
         text-align: center;
         font-weight: 100;
-        margin: 0.5rem 2rem;
+        margin: 0.5rem 2.5rem;
         letter-spacing: 1px;
         line-height: 20px;
         font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        background-color: variables.$Light-Grey;
+
 
         @include mixins.tablet {
             font-size: 1.5rem;
             line-height: 32px;
-            margin: 0.5rem 3rem;
-
+            margin: 0.5rem 5rem;
         }
 
         @include mixins.desktop {
-            margin: 0.8rem 1rem;
+            margin: 2rem 0;
             line-height: 50px;
-            font-size: 2.5rem;
+            font-size: 2rem;
+            padding: 0.5rem 2rem;
         }
 
     }
 
     &__footer {
-        border-top: 1px solid variables.$Light-Grey;
+        border-top: 1px solid variables.$Orange;
         text-align: center;
         margin: 0 1rem;
 
         @include mixins.tablet {
-            margin: 0 6rem;
+            margin: 0 6rem 2rem;
         }
 
         @include mixins.desktop {
-            margin: 0 3rem 2rem;
+            margin: 0 15rem 2rem;
         }
 
         &--linkedin {
@@ -150,12 +124,13 @@ span {
             @include mixins.tablet {
                 width: 30px;
                 height: 30px;
+                margin-top: 5px;
             }
 
             @include mixins.desktop {
-                width: 35px;
-                height: 35px;
-                margin-top: 0.5rem;
+                width: 40px;
+                height: 40px;
+                margin-top: 0.8rem;
             }
         }
 
@@ -172,8 +147,8 @@ span {
             }
 
             @include mixins.desktop {
-                width: 30px;
-                height: 30px;
+                width: 35px;
+                height: 35px;
             }
 
         }

@@ -8,11 +8,10 @@ function Homepage() {
         <section>
             <div className="home">
                 <div className="home__info" >
-                    <h1 className="home__name">Chelsia Tong</h1>
+                    <h1 className="home__name">chelsia <span>j</span> tong.</h1>
                     <h2 className="home__position"><span>front-end</span> web developer & aspiring <span>UI/UX designer</span></h2>
                 </div>
                 <img className="home__image" src={Mountain} alt="main-mountain"></img>
-
             </div>
             <div className="home__footer">
                 <a href="https://www.linkedin.com/in/chelsia-tong/">
