@@ -64,12 +64,11 @@ span {
         font-weight: 500;
 
         @include mixins.tablet {
-            font-size: 5rem;
+            font-size: 4rem;
             margin: 2rem 0 2.5rem;
         }
 
         @include mixins.desktop {
-            font-size: 5rem;
             line-height: 120px;
             margin: 0;
         }
@@ -93,7 +92,7 @@ span {
         }
 
         @include mixins.desktop {
-            margin: 1rem;
+            margin: 1rem 2.5rem;
             line-height: 50px;
             font-size: 1.8rem;
             padding: 0.5rem 2rem;

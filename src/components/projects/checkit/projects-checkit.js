@@ -29,7 +29,7 @@ class projectsCheckIt extends Component {
                     <p className="checkit__container--intro--description"><span>Check-It</span> is a minimal organization application and chrome extension that allows users to easily track their day-to-day responsibilities with a to-do function, as well as a notes function for a place to quickly jot down their thoughts. All you have to do is open up a new tab, and watch your productivity grow.</p>
                 </div>
                 <div className="check__images">
-                    <img className="checkit__images--showcase1" src={checkit} alt="checkit-picture"></img>
+                    <img className="checkit__images--showcase1" src={checkit} alt="checkit-home"></img>
                     <img className="checkit__images--showcase2" src={todo} alt="checkit-todo"></img>
                     <img className="checkit__images--showcase3" src={notes} alt="checkit-notes"></img>
                 </div>

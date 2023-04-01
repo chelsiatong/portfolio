@@ -46,7 +46,7 @@
             }
 
             @include mixins.desktop {
-                font-size: 5rem;
+                font-size: 4rem;
                 padding-bottom: 3rem;
             }
         }
@@ -63,7 +63,7 @@
             }
 
             @include mixins.desktop {
-                font-size: 1.7rem;
+                font-size: 1.5rem;
                 padding-bottom: 1.5rem;
             }
         }
@@ -140,9 +140,9 @@
         }
 
         @include mixins.desktop {
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin: 2rem 7rem;
-            line-height: 3rem;
+            line-height: 2rem;
         }
     }
 }

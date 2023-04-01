@@ -1,7 +1,6 @@
 @use '../../styles/partials/global';
 @use '../../styles/partials/mixins';
 @use '../../styles/partials/variables';
-@use '../../styles/partials/fonts';
 
 button {
     border: none;
@@ -13,36 +12,20 @@ button {
     padding: 0.5rem 1.5rem 0.3rem;
 }
 
-
 .projects {
     margin: 1rem;
 
     @include mixins.tablet {
-        margin: 1.5rem;
+        margin: 1rem 3.5rem;
     }
 
-    &__section {
-
-        @include mixins.tablet {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 1rem;
-        }
-
-        @include mixins.desktop {
-            margin: 2rem 0;
-        }
+    @include mixins.desktop {
+        margin: 2rem 9rem;
     }
 
-    &__head {
-        // text-align: end;
-
+    &__development {
         @include mixins.tablet {
-            text-align: start;
-            width: 47%;
-        }
-
-        @include mixins.tablet {
+            width: 100%;
             margin-top: 1rem;
         }
 
@@ -53,16 +36,11 @@ button {
             padding: 0.5rem 0.8rem;
             border: 1px solid variables.$Orange;
             border-radius: 20px;
-            width: 50%;
             text-align: center;
 
             @include mixins.tablet {
                 margin-top: 0;
-                font-size: 2.7rem;
-            }
-
-            @include mixins.desktop {
-                font-size: 4rem;
+                font-size: 2.5rem;
             }
         }
 
@@ -73,18 +51,15 @@ button {
                 padding: 0.8rem;
                 border-radius: 20px;
                 font-size: 0.8rem;
+                text-align: center;
 
                 @include mixins.tablet {
-                    font-size: 1.5rem;
-                    padding-top: 0.4rem;
+                    font-size: 1.2rem;
                     line-height: 1.8rem;
                 }
 
                 @include mixins.desktop {
-                    font-size: 2.7rem;
-                    line-height: 2.5rem;
-                    padding-top: 0.7rem;
-                    padding-bottom: 0.2rem;
+                    font-size: 1.5rem;
                 }
             }
 
@@ -92,22 +67,6 @@ button {
 
             // }
 
-        }
-
-        &--picture {
-            width: 100%;
-            margin-bottom: 1rem;
-
-            @include mixins.tablet {
-                width: 50%;
-            }
-        }
-
-        &--arrow {
-            height: 3rem;
-            display: block;
-            margin: auto;
-            padding-bottom: 0.5rem;
         }
     }
 
@@ -125,18 +84,41 @@ button {
             height: 16rem;
             width: 100%;
 
-            &--checkitLogo {
+            @include mixins.tablet {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            &--checkit,
+            &--moods,
+            &--inStock {
+                @include mixins.tablet {
+                    width: 50%;
+                    display: block;
+                    margin: auto;
+                }
+
+
+            }
+
+            &--checkitLogo,
+            &--moodsLogo {
                 width: 7rem;
                 display: block;
                 margin: auto;
+
+                @include mixins.tablet {
+                    width: 12rem;
+                }
+
+            }
+
+            &--checkitLogo {
                 border-radius: 50%;
             }
 
             &--moodsLogo {
-                width: 7rem;
                 padding: 1.5rem 0 1rem;
-                display: block;
-                margin: auto;
             }
 
 
@@ -145,16 +127,40 @@ button {
                 padding: 1rem 0 1rem;
                 color: #2e66e5;
                 text-align: center;
+
+                @include mixins.tablet {
+                    font-size: 3.5rem;
+                    margin: auto;
+                }
             }
 
             &--title {
                 text-align: center;
                 font-weight: 600;
+
+                @include mixins.tablet {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                @include mixins.desktop {
+                    font-size: 3rem;
+                    margin: 1.5rem 0;
+                }
             }
 
             &--description {
                 text-align: center;
                 font-weight: 300;
+
+                @include mixins.tablet {
+                    margin-top: 0;
+                    font-size: 1.2rem;
+                }
+
+                @include mixins.desktop {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -190,58 +196,4 @@ button {
         }
     }
 
-    // &__all {
-    //     margin-top: 1rem;
-    //     text-align: center;
-
-    //     &--container {
-    //         border-top: 2px dashed variables.$Light-Grey;
-    //         display: flex;
-    //         flex-direction: column;
-
-    //         &__checkit,
-    //         &__googlemoods,
-    //         &__instagram,
-    //         &__office {
-    //             filter: grayscale(100%);
-    //             border: 1px solid variables.$Light-Grey;
-    //             padding: 0.5rem;
-    //             border-radius: 10px;
-    //             display: block;
-    //             margin: auto;
-    //         }
-
-    //         &__checkit {
-    //             height: 18rem;
-
-    //             @include mixins.tablet {
-    //                 height: 24rem;
-    //             }
-    //         }
-
-    //         &__googlemoods {
-    //             height: 16.5rem;
-
-    //             @include mixins.tablet {
-    //                 height: 21.5rem;
-    //             }
-    //         }
-
-    //         &__instagram {
-    //             height: 17.5rem;
-
-    //             @include mixins.tablet {
-    //                 height: 23.5rem;
-    //             }
-    //         }
-
-    //         &__office {
-    //             height: 17.5rem;
-
-    //             @include mixins.tablet {
-    //                 height: 23.5rem;
-    //             }
-    //         }
-    //     }
-    // }
 }

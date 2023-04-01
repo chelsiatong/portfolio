@@ -192,13 +192,13 @@ ul {
     }
 
     &__features {
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 1rem 1rem;
         margin: 2rem 0 2rem;
         border-radius: 20px;
         border: 2px solid rgba(#2D8CF0, 0.5);
 
         @include mixins.tablet {
-            padding-bottom: 0;
+            padding: 2rem 2rem 1rem;
         }
 
         @include mixins.desktop {

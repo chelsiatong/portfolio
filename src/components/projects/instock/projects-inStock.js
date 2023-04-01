@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './inStock.scss';
-import inStock from '../../../assets/images/InStock-Logo_2x.png'
 
 class projectsInStock extends Component {
     render() {
