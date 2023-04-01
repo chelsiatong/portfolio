@@ -10,7 +10,7 @@ ul {
     margin: 0 1rem 2rem;
 
     @include mixins.tablet {
-        margin: 0 3rem 2rem;
+        margin: 0 3.5rem 2rem;
     }
 
     @include mixins.desktop {
@@ -25,6 +25,11 @@ ul {
         text-align: center;
         border-radius: 15px;
         text-transform: uppercase;
+
+        @include mixins.tablet {
+            padding: 1rem 3rem;
+            margin-top: 1.5rem;
+        }
 
         @include mixins.desktop {
             font-size: 5rem;
@@ -62,7 +67,7 @@ ul {
             @include mixins.tablet {
                 font-size: 1.7rem;
                 text-align: center;
-                margin-top: 4rem;
+                margin-top: 3rem;
                 font-weight: 600;
             }
 
@@ -123,13 +128,18 @@ ul {
     }
 
     &__container {
-        background-color: rgba(#2D8CF0, 0.15);
+        background-color: rgba(#F4B400, 0.1);
         padding: 1.5rem 1rem;
         margin: 3rem 0 2rem;
         border-radius: 20px;
 
+        @include mixins.tablet {
+            padding: 3rem;
+            margin-top: 2rem;
+        }
+
         @include mixins.desktop {
-            padding: 3.5rem 3rem;
+            padding: 5rem 6.5rem;
         }
 
         &--intro {
@@ -154,11 +164,12 @@ ul {
 
                 @include mixins.tablet {
                     font-size: 1.3rem;
+                    margin-bottom: 0;
+
                 }
 
                 @include mixins.desktop {
                     font-size: 1.7rem;
-                    margin-bottom: 0;
 
                 }
             }
@@ -176,7 +187,7 @@ ul {
             margin-top: 1rem;
             border-radius: 20px;
             width: 100%;
-            border: 1px solid rgba(#F4B400, 0.5);
+            border: 1px solid rgba(#0F9D58, 0.5);
 
             @include mixins.desktop {
                 width: 49%;
@@ -195,18 +206,18 @@ ul {
         padding: 1.5rem 1rem 1rem;
         margin: 2rem 0 2rem;
         border-radius: 20px;
-        border: 2px solid rgba(#2D8CF0, 0.5);
+        border: 2px solid rgba(#F4B400, 0.5);
 
         @include mixins.tablet {
-            padding: 2rem 2rem 1rem;
+            padding: 2rem 3rem 1rem;
         }
 
         @include mixins.desktop {
-            padding: 3.5rem 3rem;
+            padding: 4rem 6.5rem;
         }
 
         &--title {
-            color: #2D8CF0;
+            color: #F4B400;
             font-weight: 400;
             margin: 0;
             text-transform: uppercase;

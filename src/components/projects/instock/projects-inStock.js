@@ -13,10 +13,10 @@ class projectsInStock extends Component {
                         <p className="inStock__info">Full-Stack Web Developer</p>
                         <h3 className="inStock__title--role">Duration</h3>
                         <p className="inStock__info">July 2022</p>
-                        <h3 className="inStock__title--role">Location</h3>
-                        <p className="inStock__info">Remote | Toronto, ON</p>
                     </div>
-                    <div>
+                    <div><
+                        h3 className="inStock__title--role">Location</h3>
+                        <p className="inStock__info">Remote | Toronto, ON</p>
                         <h3 className="inStock__title--role">Team</h3>
                         <p className="inStock__info"><span>4</span> Web Developers</p>
                     </div>
@@ -33,7 +33,9 @@ class projectsInStock extends Component {
                 <div className="inStock__features">
                     <h2 className="inStock__features--title">special features</h2>
                     <ul className="inStock__features--list">
+                        <li>&#x2713; Full-Stack Application</li>
                         <li>&#x2713; Agile Team</li>
+                        <li>&#x2713; Scrum Leader</li>
                         <li>&#x2713; Jira and Scrum Methodology</li>
                         <li>&#x2713; Node, Express, and Postman</li>
                     </ul>
