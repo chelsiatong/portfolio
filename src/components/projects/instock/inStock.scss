@@ -144,39 +144,39 @@ ul {
     }
 
     &__images {
-        @include mixins.desktop {
+        @include mixins.tablet {
             display: flex;
             flex-direction: row;
+            gap: 1rem;
         }
 
-        &--showcase1,
-        &--showcase2 {
+        @include mixins.desktop {
+            flex-direction: column;
+        }
+
+        &--warehouse,
+        &--inventory {
             margin-top: 1rem;
             border-radius: 20px;
             width: 100%;
-            border: 1px solid rgba(#F4B400, 0.5);
+            border: 2px solid rgba(#13182c, 0.5);
+            padding: 0.2rem;
 
             @include mixins.desktop {
-                width: 49%;
-                padding: 0.5rem;
-            }
-        }
-
-        &--showcase2 {
-            @include mixins.desktop {
-                margin-left: 1rem;
+                width: 33.2%;
             }
         }
     }
 
     &__features {
         padding: 1.5rem 1rem 1rem;
-        margin: 2rem 0 2rem;
+        margin: 1rem 0 2rem;
         border-radius: 20px;
         border: 2px solid rgba(#13182c, 0.5);
 
         @include mixins.tablet {
             padding: 2rem 3rem 1rem;
+            margin: 2rem 0 2rem;
         }
 
         @include mixins.desktop {
