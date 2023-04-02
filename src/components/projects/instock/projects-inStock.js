@@ -30,8 +30,8 @@ class projectsInStock extends Component {
                 </div>
 
                 <div className="inStock__container">
-                    <h2 className="inStock__container--intro">introduction</h2>
-                    <p className="inStock__container--intro--description"><span>InStock</span> is a full-stack web application delivering an Inventory Management System for a Fortune 500 client. This application is new and improved, built from the ground up from a previous existing system that is not scalable and doesn't perform well under a heavy traffic load. My team and I created a time-sensitive, full-stack application with a modern front-end communicating with a robust Express back-end.</p>
+                    <h2 className="inStock__container--intro">summary</h2>
+                    <p className="inStock__container--intro--description"><span>InStock</span> is a fully responsive full-stack web application delivering an Inventory Management System for a Fortune 500 client. This application is new and improved, built from the ground up from a previous existing system that is not scalable and doesn't perform well under a heavy traffic load. My team and I created a time-sensitive, full-stack application with a modern front-end communicating with a robust Express back-end.</p>
                 </div>
                 <div className="inStock__images">
                     <div>
@@ -52,7 +52,7 @@ class projectsInStock extends Component {
                         <li>&#x2713; Agile Team</li>
                         <li>&#x2713; Scrum Leader</li>
                         <li>&#x2713; Jira and Scrum Methodology</li>
-                        <li>&#x2713; Node, Express, and Postman</li>
+                        <li>&#x2713; ReactJS, SASS JS, Node, Express, and Thunder Client</li>
                     </ul>
                 </div>
                 <a href="/projects">

@@ -20,10 +20,11 @@ class projectsGoogleMoods extends Component {
                         <p className="googleMoods__info">Front-End Lead</p>
                         <h3 className="googleMoods__title--role">Duration</h3>
                         <p className="googleMoods__info">July 2022</p>
-                        <h3 className="googleMoods__title--role">Location</h3>
-                        <p className="googleMoods__info">Remote | Toronto, ON</p>
+
                     </div>
                     <div>
+                        <h3 className="googleMoods__title--role">Location</h3>
+                        <p className="googleMoods__info">Remote | Toronto, ON</p>
                         <h3 className="googleMoods__title--role">Team</h3>
                         <p className="googleMoods__info--alter"><span>3</span> Web Developers</p>
                         <p className="googleMoods__info--alter"><span>2</span> UI/ UX Designers</p>
@@ -32,7 +33,7 @@ class projectsGoogleMoods extends Component {
                 </div>
 
                 <div className="googleMoods__container">
-                    <h2 className="googleMoods__container--intro">introduction</h2>
+                    <h2 className="googleMoods__container--intro">summary</h2>
                     <p className="googleMoods__container--intro--description"><span>Google Moods</span> is a front-end application inspired by the, "How might we" increase access to mental health resources so that people can feel supported and improve their wellbeing. <br></br><br></br> BrainStation X Google.  </p>
                 </div>
                 <div className="googleMoods__images">
@@ -44,6 +45,7 @@ class projectsGoogleMoods extends Component {
                     <ul className="googleMoods__features--list">
                         <li>&#x2713; Google industry project lead</li>
                         <li>&#x2713; Chrome extension</li>
+                        <li>&#x2713; ReactJS, JavaScript, and SASS</li>
                         <li>&#x2713; BrainStation X Google</li>
                     </ul>
                 </div>

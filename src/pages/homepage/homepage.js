@@ -49,7 +49,7 @@ function Homepage() {
                             <p>Netlify</p>
                         </div>
                         <div className="home__tools--container__cards">
-                            <p>Canva</p>
+                            <p>EmailJS</p>
                         </div>
                     </div>
                 </div>

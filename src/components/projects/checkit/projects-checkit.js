@@ -25,7 +25,7 @@ class projectsCheckIt extends Component {
                     </div>
                 </div>
                 <div className="checkit__container">
-                    <h2 className="checkit__container--intro">introduction</h2>
+                    <h2 className="checkit__container--intro">summary</h2>
                     <p className="checkit__container--intro--description"><span>Check-It</span> is a minimal organization application and chrome extension that allows users to easily track their day-to-day responsibilities with a to-do function, as well as a notes function for a place to quickly jot down their thoughts. All you have to do is open up a new tab, and watch your productivity grow.</p>
                 </div>
                 <div className="check__images">
@@ -41,7 +41,7 @@ class projectsCheckIt extends Component {
                         <li>&#x2713; Unsplash API background</li>
                         <li>&#x2713; CRUD operations</li>
                         <li>&#x2713; UI Design</li>
-                        <li>&#x2713; Individual Project</li>
+                        <li>&#x2713; ReactJS, JavaScript, and SASS</li>
                     </ul>
                 </div>
                 <a href="/projects">

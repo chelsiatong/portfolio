@@ -22,14 +22,15 @@ function Contacts() {
         <section className="contacts" >
             <div className="contacts__style">
                 {/* <img className="contacts__mountain-picture" src={ContactPic} alt="Contact-mountain" ></img> */}
-                <div className="contacts__words">
-                    <h1 className="contacts__background" >contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me </h1>
-                    <h1 className="contacts__background" >contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me </h1>
+                <h2 className="contacts__mainTitle" >wanna chat? &#x270C;</h2>
+                {/* <div className="contacts__words">
+                    <h1 className="contacts__background" >contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me</h1>
+                    <h1 className="contacts__background" >contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me</h1>
                     <h1 className="contacts__background--add" >contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me<br></br>contact me </h1>
-                </div>
+                </div> */}
             </div>
             <div className="contacts__section" >
-                <h2 className="contacts__title" >stay in touch.</h2>
+                <h2 className="contacts__title" >I'd love to hear from you! Contact me and let's stay in touch.</h2>
                 <form onSubmit={sendEmail}>
                     <div className="contacts__form" >
                         <div className="contacts__area contacts__area--subject">
@@ -51,7 +52,7 @@ function Contacts() {
                             <textarea placeholder="Your Message" name="message" />
                         </div>
                         <div className="contacts__area--send" >
-                            <input type="submit" className="contacts__area--send__button" value="Send" />
+                            <input type="submit" className="contacts__area--send__button" value="send" />
                         </div>
                     </div>
                 </form>
