@@ -11,9 +11,8 @@ textarea {
     margin-top: 0.5rem;
     font-size: 0.7rem;
     width: 80%;
-    border: 1px solid variables.$Light-Grey;
-    border-radius: 5px;
-
+    border: 1px solid rgba(variables.$Light-Grey, 0.5);
+    border-radius: 10px;
 
     @include mixins.tablet {
         font-size: 1rem;
@@ -23,29 +22,25 @@ textarea {
 
     @include mixins.tablet {
         height: 13.5rem;
-        font-size: 1.1rem;
     }
 
 }
 
 .contacts {
+
+    @include mixins.tablet {
+        margin: 1rem 3.5rem;
+    }
+
     @include mixins.desktop {
         display: flex;
-        justify-content: space-evenly;
-        margin: 0 2rem;
+        justify-content: space-between;
+        margin: 0 9rem;
+        flex-direction: row-reverse;
     }
 
     &__style {
         margin: 1rem;
-
-        @include mixins.tablet {
-            height: 520px;
-        }
-
-        @include mixins.desktop {
-            height: 710px;
-            margin-top: 0;
-        }
     }
 
     &__mainTitle {
@@ -54,46 +49,19 @@ textarea {
         font-size: 2rem;
         font-weight: 400;
         margin: 0;
+
+        @include mixins.tablet {
+            margin: 2rem 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        @include mixins.desktop {
+            writing-mode: vertical-lr;
+            font-size: 4rem;
+        }
     }
 
-    // &__words {
-    //     display: flex;
-    //     justify-content: center;
-    //     position: relative;
-    //     bottom: 10rem;
-    //     gap: 1rem;
-    //     margin-top: 7rem;
-    //     color: variables.$Dark-Grey;
-
-    //     @include mixins.tablet {
-    //         font-size: 1.4rem;
-    //         bottom: 20rem;
-    //         margin-top: 0;
-    //     }
-
-    //     @include mixins.desktop {
-    //         bottom: 19rem;
-    //         gap: 0.5rem;
-    //         font-size: 1rem;
-    //     }
-    // }
-
-
-    // &__background {
-    //     opacity: 10%;
-    //     z-index: -1000;
-
-    //     &--add {
-    //         display: none;
-
-    //         @include mixins.tablet {
-    //             display: flex;
-    //             opacity: 20%;
-    //             z-index: -1;
-    //         }
-
-    //     }
-    // }
 
     &__title {
         margin: 0 1rem;
@@ -105,11 +73,14 @@ textarea {
         font-size: 0.6rem;
 
         @include mixins.tablet {
-            margin: 0 15rem;
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0 5rem;
         }
 
         @include mixins.desktop {
-            margin: 0 7rem;
+            font-size: 1.5rem;
+            margin: 0 1rem 0 0;
         }
     }
 
@@ -122,6 +93,7 @@ textarea {
 
         @include mixins.desktop {
             margin: 2rem 0 0;
+            width: 100%;
         }
     }
 
@@ -136,7 +108,6 @@ textarea {
             @include mixins.tablet {
                 display: flex;
                 justify-content: space-between;
-
             }
         }
     }
@@ -150,7 +121,13 @@ textarea {
             @include mixins.tablet {
                 margin-left: 0;
             }
+        }
 
+        &--email,
+        &--name {
+            @include mixins.desktop {
+                width: 50%;
+            }
         }
 
         &--send {
@@ -167,12 +144,12 @@ textarea {
                 letter-spacing: 2px;
 
                 @include mixins.tablet {
-                    padding: 0.6rem 6rem;
+                    padding: 0.8rem 3rem;
+                    font-size: 1.3rem;
                 }
 
                 @include mixins.desktop {
                     padding: 0.8rem 10rem;
-                    font-size: 1.2rem;
                 }
             }
         }
@@ -194,15 +171,22 @@ textarea {
         margin: 0.5rem 0 0;
 
         @include mixins.tablet {
-            font-size: 1.3rem;
+            font-size: 1rem;
             inline-size: 9rem;
+            margin: 1rem 0;
+        }
+
+        &--name {
+            @include mixins.tablet {
+                margin-right: 2.3rem;
+            }
 
         }
 
-        &--fullname {
+        &--email {
             @include mixins.tablet {
-                margin-right: 2.3rem;
-                inline-size: 11rem;
+                text-align: right;
+                margin-right: 1.5rem;
             }
         }
     }
@@ -212,32 +196,28 @@ textarea {
         height: 2rem;
         padding-left: 0.5rem;
         font-size: 0.7rem;
-        border-radius: 5px;
-        border: 1px solid variables.$Light-Grey;
+        border-radius: 10px;
+        border: 1px solid rgba(variables.$Light-Grey, 0.5);
 
         @include mixins.tablet {
             width: 95%;
-            margin-top: 0.75rem;
+            margin-top: 0.7rem;
             font-size: 1rem;
             padding-top: 0.2rem;
         }
 
+        @include mixins.desktop {
+            margin-top: 0.6rem;
+        }
+
         &--name {
-            margin-left: 0.2rem;
 
             @include mixins.tablet {
-                margin-left: 0.3rem;
-                padding-right: 4rem;
+                margin-left: 1.5rem;
             }
 
             @include mixins.desktop {
-                margin-left: 0;
-            }
-        }
-
-        &--email {
-            @include mixins.tablet {
-                padding-right: 4rem;
+                margin-left: 0.8rem;
             }
         }
 
