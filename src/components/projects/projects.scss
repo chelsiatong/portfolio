@@ -63,10 +63,6 @@ button {
                 }
             }
 
-            // &__design {
-
-            // }
-
         }
     }
 
@@ -91,7 +87,9 @@ button {
 
             &--checkit,
             &--moods,
-            &--inStock {
+            &--inStock,
+            &--etsy,
+            &--connector {
                 @include mixins.tablet {
                     width: 50%;
                     display: block;
@@ -102,7 +100,8 @@ button {
             }
 
             &--checkitLogo,
-            &--moodsLogo {
+            &--moodsLogo,
+            &--etsyLogo {
                 width: 7rem;
                 display: block;
                 margin: auto;
@@ -110,7 +109,16 @@ button {
                 @include mixins.tablet {
                     width: 12rem;
                 }
+            }
 
+            &--etsyLogo {
+                width: 10rem;
+                margin-top: 1rem;
+
+                @include mixins.tablet {
+                    width: 15rem;
+                    margin: auto;
+                }
             }
 
             &--checkitLogo {
@@ -122,7 +130,8 @@ button {
             }
 
 
-            &--inStockLogo {
+            &--inStockLogo,
+            &--connectorLogo {
                 font-size: 2rem;
                 padding: 1rem 0 1rem;
                 color: #2e66e5;
@@ -133,6 +142,15 @@ button {
                     margin: auto;
                 }
             }
+
+            &--connectorLogo {
+                color: #00408B;
+
+                @include mixins.tablet {
+                    font-size: 2.8rem;
+                }
+            }
+
 
             &--title {
                 text-align: center;
@@ -195,5 +213,48 @@ button {
             }
         }
     }
+
+    &__design {
+        border: 1px solid variables.$Orange;
+        border-radius: 20px;
+        padding: 0.5rem;
+
+        &--title {
+            font-size: 1.2rem;
+            background-color: rgba(variables.$Orange, 0.7);
+            color: variables.$Newspaper;
+            font-weight: 500;
+            padding: 0.5rem 0.8rem;
+            border-radius: 20px;
+            text-align: center;
+
+            @include mixins.tablet {
+                margin-top: 0;
+                font-size: 2.5rem;
+            }
+        }
+
+        &--description {
+
+            &__design {
+                background-color: rgba(variables.$Light-Grey, 0.7);
+                padding: 0.8rem;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                text-align: center;
+
+                @include mixins.tablet {
+                    font-size: 1.2rem;
+                    line-height: 1.8rem;
+                }
+
+                @include mixins.desktop {
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+    }
+
 
 }

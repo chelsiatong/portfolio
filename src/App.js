@@ -9,6 +9,8 @@ import Contact from './components/contacts/contacts';
 import ProjectsCheckIt from './components/projects/checkit/projects-checkit';
 import ProjectsGoogleMoods from './components/projects/googlemoods/projects-googleMoods';
 import ProjectsInStock from './components/projects/instock/projects-inStock';
+import Etsy from './components/projects/etsy/etsy';
+import Connector from './components/projects/connector/connector';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/checkit" component={ProjectsCheckIt} />
         <Route path="/googlemoods" component={ProjectsGoogleMoods} />
         <Route path="/inStock" component={ProjectsInStock} />
+        <Route path="/etsy" component={Etsy} />
+        <Route path="/connector" component={Connector} />
         <Route path="/projects" component={ProjectsSection} />
         <Route path="/contact" component={Contact} />
       </Switch>
