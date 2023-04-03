@@ -39,6 +39,7 @@ class projectsCheckIt extends Component {
                         <li>&#x2713; Chrome extension</li>
                         <li>&#x2713; Day/night mode</li>
                         <li>&#x2713; Unsplash API background</li>
+                        <li>&#x2713; Fully Responsive Web Design</li>
                         <li>&#x2713; CRUD operations</li>
                         <li>&#x2713; UI Design</li>
                         <li>&#x2713; ReactJS, JavaScript, and SASS</li>

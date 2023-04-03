@@ -43,10 +43,10 @@ function Homepage() {
                             <p>Git</p>
                         </div>
                         <div className="home__tools--container__cards">
-                            <p>ChakraUI</p>
+                            <p>JIRA</p>
                         </div>
                         <div className="home__tools--container__cards">
-                            <p>Netlify</p>
+                            <p>Scrum</p>
                         </div>
                         <div className="home__tools--container__cards">
                             <p>EmailJS</p>

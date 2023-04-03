@@ -49,6 +49,7 @@ class projectsInStock extends Component {
                     <h2 className="inStock__features--title">special features</h2>
                     <ul className="inStock__features--list">
                         <li>&#x2713; Full-Stack Application</li>
+                        <li>&#x2713; Fully Responsive Web Design</li>
                         <li>&#x2713; Agile Team</li>
                         <li>&#x2713; Scrum Leader</li>
                         <li>&#x2713; Jira and Scrum Methodology</li>
