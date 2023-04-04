@@ -16,11 +16,11 @@ button {
     margin: 1rem;
 
     @include mixins.tablet {
-        margin: 1rem 3.5rem;
+        margin: 1rem 6rem;
     }
 
     @include mixins.desktop {
-        margin: 2rem 9rem;
+        margin: 2rem 15rem;
     }
 
     &__development {

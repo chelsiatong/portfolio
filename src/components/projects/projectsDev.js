@@ -73,7 +73,6 @@ class ProjectsDev extends Component {
                             </div>
                         </button>
                     </Link>
-
                 </div>
             </div>
         )

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './etsy.scss'
+import { Link } from 'react-router-dom';
 import navy from '../../../assets/images/navy.png';
 import olive from '../../../assets/images/olive.png';
 import pink from '../../../assets/images/pink.png';
@@ -45,9 +46,9 @@ class Etsy extends Component {
                         <li>&#x2713; Canva</li>
                     </ul>
                 </div>
-                <a href="/projects">
+                <Link to="/projects">
                     <button className="etsy__back">&#x276E; return to designs</button>
-                </a>
+                </Link>
             </div>);
     }
 }

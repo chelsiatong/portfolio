@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './checkit.scss';
 import checkit from '../../../assets/images/checkit.jpeg'
 import notes from '../../../assets/images/notes.png'
@@ -48,9 +49,9 @@ class projectsCheckIt extends Component {
                         <li>&#x2713; ReactJS, JavaScript, and SASS</li>
                     </ul>
                 </div>
-                <a href="/projects">
+                <Link to="/projects">
                     <button className="checkit__back">&#x276E; return to projects</button>
-                </a>
+                </Link>
             </div>
         );
     }

@@ -6,6 +6,7 @@ import warehouseEdit from '../../../assets/images/warehouse-edit.png'
 import inventory from '../../../assets/images/inventory.png'
 import inventoryAdd from '../../../assets/images/inventory-add.png'
 import inventoryEdit from '../../../assets/images/inventory-edit.png'
+import { Link } from 'react-router-dom';
 
 
 class projectsInStock extends Component {
@@ -56,9 +57,9 @@ class projectsInStock extends Component {
                         <li>&#x2713; ReactJS, SASS JS, Node, Express, and Thunder Client</li>
                     </ul>
                 </div>
-                <a href="/projects">
+                <Link to="/projects">
                     <button className="inStock__back">&#x276E; return to projects</button>
-                </a>
+                </Link>
             </div>
         );
     }

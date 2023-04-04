@@ -11,10 +11,12 @@ import ProjectsGoogleMoods from './components/projects/googlemoods/projects-goog
 import ProjectsInStock from './components/projects/instock/projects-inStock';
 import Etsy from './components/projects/etsy/etsy';
 import Connector from './components/projects/connector/connector';
+import ScrollToTop from './components/scrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navigation />
       <Switch>
         <Route path="/" exact component={Homepage} />
