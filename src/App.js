@@ -23,7 +23,7 @@ function App() {
         <Route path="/googlemoods" component={ProjectsGoogleMoods} />
         <Route path="/inStock" component={ProjectsInStock} />
         <Route path="/etsy" component={Etsy} />
-        <Route path="/connector" component={Connector} />
+        <Route path="/connêctor" component={Connector} />
         <Route path="/projects" component={ProjectsSection} />
         <Route path="/contact" component={Contact} />
       </Switch>

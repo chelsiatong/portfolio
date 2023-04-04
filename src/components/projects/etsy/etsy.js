@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import './etsy.scss'
+import navy from '../../../assets/images/navy.png';
+import olive from '../../../assets/images/olive.png';
+import pink from '../../../assets/images/pink.png';
+import grey from '../../../assets/images/grey.png';
+
 
 class Etsy extends Component {
     render() {
@@ -26,9 +31,10 @@ class Etsy extends Component {
                     <p className="etsy__container--intro--description"><span>Digital CJT</span> is an Etsy shop I've created, focused on digital downloads that includes planners, calendars, to-do lists, etc. With the help of Canva, I've designed and developed various templates to enhance organization and time-management skills.  </p>
                 </div>
                 <div className="etsy__images">
-                    {/* <img className="etsy__images--showcase1" src={checkit} alt="checkit-home"></img>
-                    <img className="etsy__images--showcase2" src={todo} alt="checkit-todo"></img>
-                    <img className="etsy__images--showcase3" src={notes} alt="checkit-notes"></img> */}
+                    <img className="etsy__images--showcase" src={navy} alt="digital planner navy"></img>
+                    <img className="etsy__images--showcase" src={pink} alt="digital planner pink"></img>
+                    <img className="etsy__images--showcase" src={olive} alt="digital planner olive"></img>
+                    <img className="etsy__images--showcase" src={grey} alt="digital planner grey"></img>
                 </div>
                 <div className="etsy__features">
                     <h2 className="etsy__features--title">special features</h2>
@@ -37,7 +43,6 @@ class Etsy extends Component {
                         <li>&#x2713; Custom graphics and templates for digital organizers</li>
                         <li>&#x2713; UI Design and User Research</li>
                         <li>&#x2713; Canva</li>
-
                     </ul>
                 </div>
                 <a href="/projects">

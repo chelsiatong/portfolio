@@ -35,10 +35,13 @@ class projectsGoogleMoods extends Component {
                 <div className="googleMoods__container">
                     <h2 className="googleMoods__container--intro">summary</h2>
                     <p className="googleMoods__container--intro--description"><span>Google Moods</span> is a front-end application inspired by the, "How might we" increase access to mental health resources so that people can feel supported and improve their wellbeing. <br></br><br></br> BrainStation X Google.  </p>
+                    <a href='https://google-moods.netlify.app/' alt='google Moods link'>
+                        <button className="googleMoods__container--button" >click here!</button>
+                    </a>
                 </div>
                 <div className="googleMoods__images">
-                    <img className="googleMoods__images--showcase1" src={googleMoods1} alt="googleMoods1"></img>
-                    <img className="googleMoods__images--showcase2" src={googleMoods2} alt="googleMoods2"></img>
+                    <img className="googleMoods__images--showcase" src={googleMoods1} alt="googleMoods1"></img>
+                    <img className="googleMoods__images--showcase" src={googleMoods2} alt="googleMoods2"></img>
                 </div>
                 <div className="googleMoods__features">
                     <h2 className="googleMoods__features--title">special features</h2>

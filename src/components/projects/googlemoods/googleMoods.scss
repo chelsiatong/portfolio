@@ -174,30 +174,49 @@ ul {
                 }
             }
         }
+
+        &--button {
+            background-color: rgba(variables.$Orange, 0.8);
+            width: 40%;
+            color: variables.$Newspaper;
+            border-radius: 15px;
+            margin-top: 1rem;
+            align-items: center;
+            padding: 0.5rem;
+            font-weight: 400;
+            font-size: 1rem;
+
+            @include mixins.tablet {
+                font-size: 1.2rem;
+                width: 30%;
+                margin-top: 1.5rem;
+
+            }
+
+            @include mixins.desktop {
+                font-size: 1.5rem;
+                margin-top: 2rem;
+                width: 20%;
+            }
+        }
     }
 
     &__images {
-        @include mixins.desktop {
+        @include mixins.tablet {
+            justify-content: space-between;
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
         }
 
-        &--showcase1,
-        &--showcase2 {
+        &--showcase {
             margin-top: 1rem;
             border-radius: 20px;
             width: 100%;
+            padding: 0.5rem;
             border: 1px solid rgba(#0F9D58, 0.5);
 
-            @include mixins.desktop {
+            @include mixins.tablet {
                 width: 49%;
-                padding: 0.5rem;
-            }
-        }
-
-        &--showcase2 {
-            @include mixins.desktop {
-                margin-left: 1rem;
             }
         }
     }

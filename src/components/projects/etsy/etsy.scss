@@ -140,29 +140,25 @@ ul {
     }
 
     &__images {
-        @include mixins.desktop {
+        @include mixins.tablet {
+            justify-content: space-between;
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
         }
 
-        &--showcase1,
-        &--showcase2,
-        &--showcase3 {
+        &--showcase {
             margin-top: 1rem;
             border-radius: 20px;
             width: 100%;
-            border: 1px solid rgba(variables.$Orange, 0.5);
+            padding: 0.5rem;
+            border: 1px solid rgba(#eb6d20, 0.5);
 
-            @include mixins.desktop {
-                width: 32%;
-                padding: 0.5rem;
+            @include mixins.tablet {
+                width: 49%;
             }
-        }
 
-        &--showcase2,
-        &--showcase3 {
             @include mixins.desktop {
-                margin-left: 1rem;
+                width: 24%;
             }
         }
     }

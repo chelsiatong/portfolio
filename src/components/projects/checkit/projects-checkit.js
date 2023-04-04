@@ -27,11 +27,14 @@ class projectsCheckIt extends Component {
                 <div className="checkit__container">
                     <h2 className="checkit__container--intro">summary</h2>
                     <p className="checkit__container--intro--description"><span>Check-It</span> is a minimal organization application and chrome extension that allows users to easily track their day-to-day responsibilities with a to-do function, as well as a notes function for a place to quickly jot down their thoughts. All you have to do is open up a new tab, and watch your productivity grow.</p>
+                    <a href='https://check-it-app-ext.netlify.app/' alt='check it link'>
+                        <button className="checkit__container--button" >click here!</button>
+                    </a>
                 </div>
                 <div className="checkit__images">
-                    <img className="checkit__images--showcase1" src={checkit} alt="checkit-home"></img>
-                    <img className="checkit__images--showcase2" src={todo} alt="checkit-todo"></img>
-                    <img className="checkit__images--showcase3" src={notes} alt="checkit-notes"></img>
+                    <img className="checkit__images--showcase" src={checkit} alt="checkit-home"></img>
+                    <img className="checkit__images--showcase" src={todo} alt="checkit-todo"></img>
+                    <img className="checkit__images--showcase" src={notes} alt="checkit-notes"></img>
                 </div>
                 <div className="checkit__features">
                     <h2 className="checkit__features--title">special features</h2>
