@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './projects.scss';
 import checkit from '../../assets/images/checkit-logo.png'
 import moods from '../../assets/images/moodsTogether.png'
@@ -12,7 +13,7 @@ class ProjectsDev extends Component {
                 <div className="projects__development" >
                     <h1 className="projects__development--title" >my projects</h1>
                     <p className="projects__development--description__dev" >let's start with <span>web development</span>...</p>
-                    <a href="/checkit">
+                    <Link to="/checkit">
                         <button className="projects__container">
                             <div className="projects__container--card">
                                 <img className="projects__container--card--checkitLogo" src={checkit} alt="checkit-logo"></img>
@@ -22,8 +23,8 @@ class ProjectsDev extends Component {
                                 </div>
                             </div>
                         </button>
-                    </a>
-                    <a href="/googlemoods">
+                    </Link>
+                    <Link to="/googlemoods">
                         <button className="projects__container">
                             <div className="projects__container--card">
                                 <img className="projects__container--card--moodsLogo" src={moods} alt="google moodslogo"></img>
@@ -33,8 +34,8 @@ class ProjectsDev extends Component {
                                 </div>
                             </div>
                         </button>
-                    </a>
-                    <a href="/inStock">
+                    </Link>
+                    <Link to="/inStock">
                         <button className="projects__container">
                             <div className="projects__container--card">
                                 <h2 className="projects__container--card--inStockLogo">InStock</h2>
@@ -44,13 +45,13 @@ class ProjectsDev extends Component {
                                 </div>
                             </div>
                         </button>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="projects__design">
                     <h1 className="projects__design--title" >my designs</h1>
                     <p className="projects__design--description__design" >now onto my <span>designs</span>...</p>
-                    <a href="/connêctor">
+                    <Link to="/connêctor">
                         <button className="projects__container">
                             <div className="projects__container--card">
                                 <h2 className="projects__container--card--connectorLogo">ConnêctOR</h2>
@@ -60,8 +61,8 @@ class ProjectsDev extends Component {
                                 </div>
                             </div>
                         </button>
-                    </a>
-                    <a href="/etsy">
+                    </Link>
+                    <Link to="/etsy">
                         <button className="projects__container">
                             <div className="projects__container--card">
                                 <img className="projects__container--card--etsyLogo" src={etsy} alt="etsy logo"></img>
@@ -71,7 +72,7 @@ class ProjectsDev extends Component {
                                 </div>
                             </div>
                         </button>
-                    </a>
+                    </Link>
 
                 </div>
             </div>
