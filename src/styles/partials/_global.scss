@@ -1,6 +1,5 @@
 @use './mixins';
 @use './variables';
-@use './fonts';
 
 * {
     -moz-box-sizing: border-box;
@@ -11,7 +10,6 @@
 body {
     margin: 0;
     padding: 0;
-    // font-family:'Vogue', sans-serif;
     font-family: sans-serif;
     background-color: variables.$Newspaper;
 }
