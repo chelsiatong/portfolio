@@ -4,6 +4,8 @@ import connector from '../../../assets/images/connector.png';
 import connectorProfile from '../../../assets/images/connector-profile.png';
 import connectorHome from '../../../assets/images/connector-home.png';
 import connectorJob from '../../../assets/images/connector-job.png';
+import { Link } from 'react-router-dom';
+
 
 
 class Connector extends Component {
@@ -47,9 +49,9 @@ class Connector extends Component {
                         <li>&#x2713; UI Design and User Research</li>
                     </ul>
                 </div>
-                <a href="/projects">
+                <Link to="/projects">
                     <button className="connector__back">&#x276E; return to designs</button>
-                </a>
+                </Link>
             </div>);
     }
 }

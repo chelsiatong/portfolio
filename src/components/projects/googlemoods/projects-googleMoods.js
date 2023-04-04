@@ -3,6 +3,7 @@ import './googleMoods.scss';
 import google from '../../../assets/images/Google-Logo.svg'
 import googleMoods1 from '../../../assets/images/googlemoods-1.png'
 import googleMoods2 from '../../../assets/images/googlemoods-2.png'
+import { Link } from 'react-router-dom';
 
 
 class projectsGoogleMoods extends Component {
@@ -52,9 +53,9 @@ class projectsGoogleMoods extends Component {
                         <li>&#x2713; BrainStation X Google</li>
                     </ul>
                 </div>
-                <a href="/projects">
+                <Link to="/projects">
                     <button className="googleMoods__back">&#x276E; return to projects</button>
-                </a>
+                </Link>
             </div>
         );
     }
