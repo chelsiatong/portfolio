@@ -2,32 +2,43 @@
 @use '../../styles/partials/mixins';
 @use '../../styles/partials/variables';
 
+
+span {
+    font-weight: 500;
+    color: variables.$Orange;
+}
+
+
 .home {
     margin: 1rem 1rem 0;
 
     @include mixins.tablet {
-        margin: 1.5rem 1.5rem 0;
+        margin: 3rem 1.5rem 0;
     }
 
     @include mixins.desktop {
-        margin: 2.5rem 2.5rem 0.5rem;
-        display: flex;
+        margin: 1.5rem 1.5rem 0;
     }
+
 
     &__image {
         border: 1px solid variables.$Black-Font;
+        border-radius: 12px;
         padding: 0.2rem;
-        width: 100%;
+        width: 80%;
+        display: block;
+        margin: 1.5rem auto 1rem;
 
         @include mixins.tablet {
-            width: 80%;
+            width: 70%;
             display: block;
-            margin: auto;
+            margin: 2.5rem auto;
+            padding: 0.5rem;
         }
 
         @include mixins.desktop {
-            width: 50%;
-            margin: 0;
+            width: 40%;
+            margin: 2rem auto 2rem;
         }
     }
 
@@ -41,109 +52,122 @@
 
         @include mixins.desktop {
             width: 45%;
-            // margin: 0 1rem 0 2rem;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: space-evenly;
         }
 
     }
 
-    &__portfolio {
-        font-size: 2.5rem;
-        margin-bottom: 0;
-        letter-spacing: 2px;
-
-        @include mixins.tablet {
-            font-size: 3.5rem;
-            margin-top: 1.5rem;
-        }
-
-        @include mixins.desktop {
-            font-size: 4.5rem;
-            margin-top: 0;
-            padding-bottom: 3.5rem;
-        }
-    }
-
-    &__year {
-        margin-top: 0.5rem;
-        font-weight: 400;
-        font-size: 1.5rem;
-
-        @include mixins.tablet {
-            font-size: 2rem;
-        }
-
-        @include mixins.desktop {
-            margin-top: 0;
-        }
-    }
 
     &__name {
-        text-align: end;
-        font-size: 3rem;
-        margin-top: 0;
-        margin-bottom: 0;
-        border-top: 2px solid variables.$Black-Font;
-        border-bottom: 2px solid variables.$Black-Font;
-        padding: 0.5rem 0 0;
+        text-align: center;
+        font-size: 2rem;
+        margin: 1.5rem 0;
+        font-weight: 500;
 
         @include mixins.tablet {
-            font-size: 5rem;
+            font-size: 4rem;
+            margin: 2rem 0 2.5rem;
+        }
+
+        @include mixins.desktop {
+            line-height: 120px;
+            margin: 0;
         }
     }
 
     &__position {
-        margin: 1rem 0 0.5rem;
+        text-align: center;
+        font-weight: 100;
+        margin: 0.5rem 2rem;
         letter-spacing: 1px;
-        line-height: 28px;
+        line-height: 20px;
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        background-color: variables.$Light-Grey;
 
         @include mixins.tablet {
-            font-size: 2rem;
+            font-size: 1.5rem;
             line-height: 32px;
-            margin-bottom: 0.5rem;
+            margin: 0.5rem 5rem;
         }
 
         @include mixins.desktop {
-            margin-top: 1.5rem;
-            line-height: 40px;
-            font-size: 2.5rem;
-            margin-bottom: 0.8rem;
-        }
-
-        &--ui {
-            text-align: right;
-            line-height: 28px;
-            border-top: 2px dotted variables.$Black-Font;
-            padding: 0.8rem 0 0.5rem;
-            margin: 0;
-
-            @include mixins.tablet {
-                font-size: 2rem;
-                line-height: 32px;
-            }
-
-            @include mixins.desktop {
-                font-size: 2.5rem;
-                line-height: 40px;
-                padding-top: 1.5rem;
-            }
+            margin: 1rem 2.5rem;
+            line-height: 50px;
+            font-size: 1.8rem;
+            padding: 0.5rem 2rem;
         }
 
     }
 
-    &__footer {
-        border-top: 1px solid variables.$Light-Grey;
-        text-align: center;
-        margin: 0 1rem;
+    &__tools {
+        background-color: rgba(variables.$Light-Grey, 0.5);
+        margin: 1rem 2rem;
+        border-radius: 10px;
+        padding-bottom: 1rem;
 
         @include mixins.tablet {
-            margin: 0 6rem;
+            margin: 1rem 6.5rem;
         }
 
         @include mixins.desktop {
-            margin: 0 3rem;
+            margin: 1rem 20rem 2rem;
+        }
+
+        &--title {
+            font-size: 1.5rem;
+            padding: 1.5rem 1rem 1rem;
+            text-align: center;
+            margin: 0;
+            font-weight: 400;
+
+            @include mixins.tablet {
+                font-size: 2rem;
+            }
+        }
+
+        &--container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            &__cards {
+                background-color: variables.$Newspaper;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                width: 5rem;
+                text-align: center;
+                font-size: 0.8rem;
+                font-weight: 300;
+                border-radius: 10px;
+                border: 1px solid transparent;
+
+                @include mixins.tablet {
+                    font-size: 1rem;
+                    padding: 1rem;
+                    width: 30%;
+                }
+
+                &:hover {
+                    border: 1px solid variables.$Orange;
+                }
+
+
+            }
+        }
+    }
+
+    &__footer {
+        border-top: 1px solid variables.$Orange;
+        text-align: center;
+        margin: 0 1rem 1rem;
+
+        @include mixins.tablet {
+            margin: 0 6rem 2rem;
+        }
+
+        @include mixins.desktop {
+            margin: 0 15rem 2rem;
         }
 
         &--linkedin {
@@ -155,12 +179,13 @@
             @include mixins.tablet {
                 width: 30px;
                 height: 30px;
+                margin-top: 5px;
             }
 
             @include mixins.desktop {
-                width: 35px;
-                height: 35px;
-                margin-top: 0.5rem;
+                width: 40px;
+                height: 40px;
+                margin-top: 0.8rem;
             }
         }
 
@@ -177,8 +202,8 @@
             }
 
             @include mixins.desktop {
-                width: 30px;
-                height: 30px;
+                width: 35px;
+                height: 35px;
             }
 
         }

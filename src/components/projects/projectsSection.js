@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import ProjectsNav from './projectsNav';
-import Projects from './projects';
+import ProjectsDev from './projectsDev';
 
 class ProjectsSection extends Component {
     render() {
         return (
             <div>
-                <ProjectsNav />
-                <Projects />
+                <ProjectsDev />
             </div>
         )
     }

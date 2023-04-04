@@ -1,24 +1,31 @@
 import './about.scss';
-import mountainTwo from '../../assets/images/about-mountain__2.jpeg';
-import mountainOne from '../../assets/images/about-mountain__1.jpeg';
+import kayak from '../../assets/images/kayak.jpeg';
+import me from '../../assets/images/me.png';
+import kaws from '../../assets/images/kaws.png';
+import salmon from '../../assets/images/salmon.png';
 
 function About() {
     return (
         <section className="about" >
-            <h1 className="about__title">about</h1>
-            <h2 className="about__last" >tong</h2>
-            <div className="about__section" >
-                <p className="about__position" > front-end <br></br> developer</p>
-                <img className="about__mountain--two" src={mountainTwo} alt="portrait-mountain"></img>
-                <img className="about__mountain--one" src={mountainOne} alt="landscape-mountain"></img>
+            <div className="about__introduction" >
+                <h2 className="about__introduction--intro" > my story. </h2>
+                <p className="about__introduction--description">I'm Chelsia! A <span>front-end web developer</span>, an aspiring <span>UI/UX designer</span>, and a chemistry graduate at the University of Waterloo.
+                    <br></br><br></br>I am a curious individual, who <span>loves</span> smiling, creating, problem-solving, and is <span>extremely driven</span> to learn new skills.
+                    <br></br><br></br>When I am not creating or developing, I love <span>spending time</span> with my friends and family, eating <span>salmon sashimi</span>, playing <span>sports</span>, <span>traveling</span>, and <span>DIY-ing</span> products!
+                </p>
             </div>
-            <div>
-                <p className="about__history" >At a young age, I've always been a creative and curious individual who loved learning through hands on experience. After 5 years of analytical chemistry with the addition of computer science electives, I've decided to take the leap of faith and push myself to finally become a web developer!</p>
-                <p className="about__work"> Let's Talk! <br></br> I am available for both <span>full-time</span>, and <span>freelance</span> positions!</p>
+            <div className="about__section">
+                <div className="about__section--1">
+                    <img className="about__section--me" src={me} alt="me"></img>
+                    <img className="about__section--salmon" src={salmon} alt="salmon"></img>
+                </div>
+                <div className="about__section--2">
+                    <img className="about__section--kaws" src={kaws} alt="kaws"></img>
+                    <img className="about__section--kayak" src={kayak} alt="kayak"></img>
+                </div>
             </div>
-            <h2 className="about__first" >chelsia</h2>
+            <p className="about__work"> Let's Talk! <br></br> I am available for <span>full-time</span>, and <span>freelance</span> positions!</p>
         </section>
-
     );
 }
 
